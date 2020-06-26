@@ -1,0 +1,3 @@
+Error[1218] D:\Work\33fcodes\RMS_TEST\test.c 12 : extraneous initializer values
+Error[1218] D:\Work\33fcodes\RMS_TEST\test.c 15 : extraneous initializer values
+Warning[2058] D:\Work\33fcodes\RMS_TEST\test.c 104 : call of function without prototype

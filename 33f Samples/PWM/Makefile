@@ -1,0 +1,23 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: pwm.mcp
+# Date: Wed Oct 29 20:02:40 2014
+
+AS = pic30-as.exe
+CC = pic30-gcc.exe
+LD = pic30-ld.exe
+AR = pic30-ar.exe
+HX = pic30-bin2hex.exe
+RM = rm
+
+pwm.hex : pwm.cof
+	$(HX) "pwm.cof"
+
+pwm.cof : main.o
+	$(CC) -mcpu=33FJ64MC804 "main.o" -o"pwm.cof" -Wl,-L"C:\Program Files (x86)\Microchip\MPLAB C30\lib",--script="C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld",--defsym=__MPLAB_BUILD=1,-Map="pwm.map",--report-mem
+
+main.o : c:/program\ files\ (x86)/microchip/mplab\ c30/support/dsPIC33F/h/p33FJ64MC804.h main.c
+	$(CC) -mcpu=33FJ64MC804 -x c -c "main.c" -o"main.o" -g -Wall
+
+clean : 
+	$(RM) "main.o" "pwm.cof" "pwm.hex"
+
