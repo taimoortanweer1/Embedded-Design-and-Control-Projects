@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="JoystickSample">
+</Property><Property Name="Solution File" Value="C:\Users\user\Desktop\Taimoor\joystick_status\JoystickSample.sln">
+</Property><Property Name="User Options File" Value="C:\Users\user\Desktop\Taimoor\joystick_status\JoystickSample.suo">
+</Property><Property Name="Date" Value="Friday, November 16, 2012">
+</Property><Property Name="Time" Value="17:35 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="JoystickSample.sln" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample.sln">
+</Event><Event ErrorLevel="0" Project="" Source="JoystickSample.suo" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample.suo">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\JoystickSample.csproj" Description="Project file successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\JoystickSample.csproj">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Axis.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Axis.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Axis.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Axis.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Button.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Button.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Button.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Button.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Form1.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Form1.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Form1.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\frmMain.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\frmMain.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\frmMain.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Program.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Program.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Properties\Settings.settings" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Axis.resx" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Axis.resx">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Button.resx" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Button.resx">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\frmMain.resx" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\Properties\Resources.resx" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickSample\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="JoystickSample" Source="JoystickSample\JoystickSample.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\JoystickSample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="JoystickSample" Source="JoystickSample\JoystickSample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\JoystickInterface.csproj" Description="Project file successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickInterface\JoystickInterface.csproj">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\Joystick.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickInterface\Joystick.cs">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickInterface\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\ClassDiagram1.cd" Description="File successfully backed up as C:\Users\user\Desktop\Taimoor\backup\joystick_status\Backup\JoystickInterface\ClassDiagram1.cd">
+</Event><Event ErrorLevel="1" Project="JoystickInterface" Source="JoystickInterface\JoystickInterface.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\JoystickInterface.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="JoystickInterface" Source="JoystickInterface\JoystickInterface.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="JoystickSample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="JoystickSample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JoystickSample" Source="JoystickSample\JoystickSample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="JoystickInterface" Source="JoystickInterface\JoystickInterface.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

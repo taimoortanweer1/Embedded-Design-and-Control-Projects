@@ -1,0 +1,69 @@
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.Video.DirectShow.dll
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.Video.dll
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.dll
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.Video.xml
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.Video.DirectShow.xml
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\bin\Debug\AForge.xml
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+c:\users\sony\documents\visual studio 2010\Projects\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.Video.dll
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.dll
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.Video.dll
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AForge.dll
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Desktop\vlc\WebCAM\WebCAM\bin\Debug\AviFile.dll
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\bin\Debug\AviFile.dll
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\user\Desktop\Taimoor\joystick_status\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\AviFile.dll
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Taimoor\Desktop\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.exe
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.pdb
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.exe
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\WebCAM.pdb
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\bin\Debug\AviFile.dll
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.csprojResolveAssemblyReference.cache
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Form1.resources
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.Properties.Resources.resources
+D:\Work\TANK\joystick_status\WebCAM\WebCAM\obj\x86\Debug\WebCAM.csproj.GenerateResource.Cache

@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\bin\Debug\JoystickInterface.XML
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\bin\Debug\JoystickInterface.dll
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\bin\Debug\JoystickInterface.pdb
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\obj\Debug\JoystickInterface.dll
+C:\Users\user\Desktop\Taimoor\joystick-src\JoystickInterface\obj\Debug\JoystickInterface.pdb
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\bin\Debug\JoystickInterface.dll
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\bin\Debug\JoystickInterface.pdb
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\obj\Debug\JoystickInterface.dll
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\obj\Debug\JoystickInterface.pdb
+C:\Users\user\Desktop\Taimoor\joystick_status\JoystickInterface\bin\Debug\JoystickInterface.XML
