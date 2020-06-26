@@ -1,0 +1,23 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: Proj.mcp
+# Date: Tue Feb 21 06:00:06 2012
+
+AS = pic30-as.exe
+CC = pic30-gcc.exe
+LD = pic30-ld.exe
+AR = pic30-ar.exe
+HX = pic30-bin2hex.exe
+RM = rm
+
+Proj.hex : Proj.cof
+	$(HX) "Proj.cof"
+
+Proj.cof : PWM.o
+	$(CC) -mcpu=33FJ64MC802 "PWM.o" "C:\Program Files\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC802-coff.a" "C:\Program Files\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC802-elf.a" "C:\Program Files\Microchip\MPLAB C30\errata-lib\libc-coff.a" "C:\Program Files\Microchip\MPLAB C30\errata-lib\libc-elf.a" "C:\Program Files\Microchip\MPLAB C30\errata-lib\libm-coff.a" "C:\Program Files\Microchip\MPLAB C30\errata-lib\libm-elf.a" -o"Proj.cof" -Wl,--script="..\..\..\..\Program Files\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC802.gld",--defsym=__MPLAB_BUILD=1,-Map="Proj.map",--report-mem
+
+PWM.o : ../../../../program\ files/microchip/mplab\ c30/include/string.h ../../../../program\ files/microchip/mplab\ c30/include/stdlib.h ../../../../program\ files/microchip/mplab\ c30/include/yvals.h ../../../../program\ files/microchip/mplab\ c30/include/stdio.h ../../../../program\ files/microchip/mplab\ c30/support/generic/h/libpic30.h ../../../../program\ files/microchip/mplab\ c30/support/dsPIC33F/h/p33FJ64MC802.h PWM.c
+	$(CC) -mcpu=33FJ64MC802 -x c -c "PWM.c" -o"PWM.o" -g -Wall
+
+clean : 
+	$(RM) "PWM.o" "Proj.cof" "Proj.hex"
+

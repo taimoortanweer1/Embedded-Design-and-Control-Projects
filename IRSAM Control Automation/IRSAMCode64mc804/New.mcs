@@ -1,0 +1,123 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\UART.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File001]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\SABERTOOTH.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File002]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\clock.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File003]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\lcd.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File004]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\compass.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File005]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\transceiver.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File006]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\code1.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=-D__DEBUG -D__MPLAB_DEBUGGER_PK3=1
+[File007]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\New.cof
+Folder=Output
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_PK3=1 --defsym=__ICD2RAM=1
+[File008]
+Location=D:\Work\IRSAM\IRSAMCode64mc804\New.hex
+Folder=Output
+DeviceName=dsPIC33FJ64MC804
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files (x86)\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|UART.c|SABERTOOTH.c|clock.c|lcd.c|compass.c|transceiver.c|code1.c||<obj>||<lib>|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-coff.a|C:\Program Files (x86)\Microchip\MPLAB C30\lib\dsPIC33F\libp33FJ64MC804-elf.a||<lkr>|C:\Program Files (x86)\Microchip\MPLAB C30\support\dsPIC33F\gld\p33FJ64MC804.gld||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=--defsym=__MPLAB_DEBUG=1 --defsym=__MPLAB_DEBUGGER_PK3=1 --defsym=__ICD2RAM=1
+[TOOL_LOC_STAMPS]
+tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-gcc.exe
+tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\Program Files (x86)\Microchip\MPLAB C30\bin\pic30-ld.exe
