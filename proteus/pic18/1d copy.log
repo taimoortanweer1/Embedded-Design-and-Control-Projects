@@ -1,0 +1,6 @@
+# Writing all output to: D:\Work\proteus\1d copy.log
+set pad_wire_necking on
+bus diagonal
+fanout 7
+route 100
+Process stopped!
