@@ -1,0 +1,16 @@
+
+PIC18F SD WAV Audio Player
+http://projectproto.blogspot.com/2010/05/pic18f-sd-wav-audio-player.html 
+http://www.youtube.com/watch?v=mRzOwF4bx7c
+
+Simple SD Audio Player with an 8-pin IC
+http://elm-chan.org/works/sd8p/report.html
+
+WAVE PCM soundfile format
+https://ccrma.stanford.edu/courses/422/projects/WaveFormat/
+
+PIC PWM Calculator
+http://www.micro-examples.com/public/microex-navig/doc/097-pwm-calculator.html
+
+PIC Timer Calculator
+http://eng-serve.com/pic/pic_timer.html

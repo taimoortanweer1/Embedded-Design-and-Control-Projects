@@ -1,0 +1,219 @@
+
+
+HI-TECH Software Macro Assembler (PIC18) V9.64 build 5495 
+                                                       Sat May 22 08:49:08 2010
+
+
+     1                           
+     2                           	; HI-TECH C PRO for the PIC18 MCU Family V9.64
+     3                           	; Copyright (C) 1984-2009 HI-TECH Software
+     4                           	;Serial no. HCPIC18P-123456
+     5                           
+     6                           	; Auto-generated runtime startup code for final
+                                  link stage.
+     7                           
+     8                           	;
+     9                           	; Compiler options:
+    10                           	;
+    11                           	; -oPIC_WAV_Player.cof -mPIC_WAV_Player.map --s
+                                 ummary=default \
+    12                           	; --output=default main.p1 pff.p1 spi_pic18.p1 
+                                 wave_file.p1 \
+    13                           	; pwm_audio.p1 sd_mmc.p1 --chip=18F2550 -P --ru
+                                 ntime=default \
+    14                           	; --opt=default -D__DEBUG=1 -g --asmlist \
+    15                           	; --errformat=Error   [%n] %f; %l.%c %s --msgfo
+                                 rmat=Advisory[%n] %s \
+    16                           	; --warnformat=Warning [%n] %f; %l.%c %s
+    17                           	;
+    18                           
+    19                           
+    20                           
+    21                           ; Config register @ 0x300000
+    22                           ;	CPU System Clock Postscaler
+    23                           ;	CPUDIV = OSC1_PLL2, [OSC1/OSC2 Src: /1][96 MHz
+                                  PLL Src: /2]
+    24                           ;	PLL Prescaler Selection bits
+    25                           ;	PLLDIV = 5, Divide by 5 (20 MHz oscillator inp
+                                 ut)
+    26                           
+    27                           	psect	config,class=CONFIG,delta=1
+    28  300000                     		org 0x0
+    29  300000  04                 		db 0x4
+    30                           
+    31                           ; Config register @ 0x300001
+    32                           ;	Oscillator Selection bits
+    33                           ;	FOSC = HSPLL_HS, HS oscillator, PLL enabled, H
+                                 S used by USB
+    34                           
+    35                           	psect	config,class=CONFIG,delta=1
+    36  300001                     		org 0x1
+    37  300001  0E                 		db 0xE
+    38                           
+    39                           ; Config register @ 0x300002
+    40                           ;	Brown-out Reset Enable bits
+    41                           ;	BOR = ON, Brown-out Reset enabled in hardware 
+                                 only (SBOREN is disabled)
+    42                           ;	Brown-out Voltage bits
+    43                           ;	BORV = 2, 
+    44                           ;	Power-up Timer Enable bit
+    45                           ;	PWRT = ON, PWRT enabled
+    46                           
+    47                           	psect	config,class=CONFIG,delta=1
+    48  300002                     		org 0x2
+    49  300002  16                 		db 0x16
+    50                           
+    51                           ; Config register @ 0x300003
+    52                           ;	Watchdog Timer Enable bit
+    53                           ;	WDT = OFF, HW Disabled - SW Controlled
+    54                           
+    55                           	psect	config,class=CONFIG,delta=1
+    56  300003                     		org 0x3
+    57  300003  1E                 		db 0x1E
+    58                           
+    59                           ; Config register @ 0x300006
+    60                           ;	Background Debugger Enable bit
+    61                           ;	DEBUG = ON, Background debugger enabled, RB6 a
+                                 nd RB7 are dedicated to In-Circuit Debug
+    62                           ;	Single-Supply ICSP Enable bit
+    63                           ;	LVP = OFF, Single-Supply ICSP disabled
+    64                           
+    65                           	psect	config,class=CONFIG,delta=1
+    66  300006                     		org 0x6
+    67  300006  01                 		db 0x1
+    68                           
+    69                           	GLOBAL	_main,start,_exit
+    70                           	FNROOT	_main
+    71                           
+    72  000000                     	pic18cxx	equ	1
+    73                           
+    74                           	psect	config,class=CONFIG,delta=1
+    75                           	psect	idloc,class=IDLOC,delta=1
+    76                           	psect	eeprom_data,class=EEDATA,delta=1
+    77                           	psect	const,class=CODE,delta=1,reloc=2
+    78                           	psect	smallconst,class=SMALLCONST,delta=1,reloc
+                                 =2
+    79                           	psect	mediumconst,class=MEDIUMCONST,delta=1,rel
+                                 oc=2
+    80                           	psect	rbss,class=COMRAM,space=1
+    81                           	psect	bss,class=RAM,space=1
+    82                           	psect	rdata,class=COMRAM,space=1
+    83                           	psect	irdata,class=CODE,space=0,reloc=2
+    84                           	psect	bss,class=RAM,space=1
+    85                           	psect	data,class=RAM,space=1
+    86                           	psect	idata,class=CODE,space=0,reloc=2
+    87                           	psect	nvram,class=NVRAM,space=1
+    88                           	psect	nvrram,class=COMRAM,space=1
+    89                           	psect	nvbit,class=COMRAM,bit,space=1
+    90                           	psect	temp,ovrld,class=COMRAM,space=1
+    91                           	psect	struct,ovrld,class=COMRAM,space=1
+    92                           	psect	rbit,class=COMRAM,bit,space=1
+    93                           	psect	bigbss,class=BIGRAM,space=1
+    94                           	psect	bigdata,class=BIGRAM,space=1
+    95                           	psect	ibigdata,class=CODE,space=0,reloc=2
+    96                           	psect	farbss,class=FARRAM,space=0,reloc=2,delta
+                                 =1
+    97                           	psect	fardata,class=FARRAM,space=0,reloc=2,delt
+                                 a=1
+    98                           	psect	ifardata,class=CODE,space=0,reloc=2,delta
+                                 =1
+    99                           
+   100                           	psect	reset_vec,class=CODE,delta=1,reloc=2
+   101                           	psect	powerup,class=CODE,delta=1,reloc=2
+   102                           	psect	intcode,class=CODE,delta=1,reloc=2
+   103                           	psect	intcodelo,class=CODE,delta=1,reloc=2
+   104                           	psect	intret,class=CODE,delta=1,reloc=2
+   105                           	psect	intentry,class=CODE,delta=1,reloc=2
+   106                           
+   107                           	psect	intsave_regs,class=BIGRAM,space=1
+   108                           	psect	init,class=CODE,delta=1,reloc=2
+   109                           	psect	text,class=CODE,delta=1,reloc=2
+   110                           GLOBAL	intlevel0,intlevel1,intlevel2
+   111  002A60                     intlevel0:
+   112  002A60                     intlevel1:
+   113  002A60                     intlevel2:
+   114                           GLOBAL	intlevel3
+   115  002A60                     intlevel3:
+   116                           	psect	end_init,class=CODE,delta=1,reloc=2
+   117                           	psect	clrtext,class=CODE,delta=1,reloc=2
+   118                           
+   119                           	psect	rparam,class=COMRAM,space=1
+   120                           	psect	param0,class=BANK0,space=1
+   121                           	psect	param1,class=BANK1,space=1
+   122                           	psect	param2,class=BANK2,space=1
+   123                           	psect	param3,class=BANK3,space=1
+   124  000000                     wreg	EQU	0FE8h
+   125  000000                     fsr0l	EQU	0FE9h
+   126  000000                     fsr0h	EQU	0FEAh
+   127  000000                     fsr1l	EQU	0FE1h
+   128  000000                     fsr1h	EQU	0FE2h
+   129  000000                     fsr2l	EQU	0FD9h
+   130  000000                     fsr2h	EQU	0FDAh
+   131  000000                     postinc0	EQU	0FEEh
+   132  000000                     postdec0	EQU	0FEDh
+   133  000000                     postinc1	EQU	0FE6h
+   134  000000                     postdec1	EQU	0FE5h
+   135  000000                     postinc2	EQU	0FDEh
+   136  000000                     postdec2	EQU	0FDDh
+   137  000000                     tblptrl	EQU	0FF6h
+   138  000000                     tblptrh	EQU	0FF7h
+   139  000000                     tblptru	EQU	0FF8h
+   140  000000                     tablat		EQU	0FF5h
+   141                           
+   142                           	GLOBAL __accesstop
+   143  000000                     __accesstop EQU 96
+   144                           	PSECT	ramtop,class=RAM
+   145                           	GLOBAL	__S1			; top of RAM usage
+   146                           	GLOBAL	__ramtop
+   147                           	GLOBAL	__LRAM,__HRAM
+   148  000400                     __ramtop:
+   149                           
+   150                           	PSECT	reset_vec
+   151  000000                     reset_pos:
+   152  000000  EF0A  F000         	goto	start
+   153                           
+   154                           	PSECT	init
+   155  000014                     start:
+   156  000014                     _exit:
+   157                           ; fardata psect  - 0 bytes to load
+   158                           
+   159                           ; farbss psect  - 0 bytes to clear
+   160                           
+   161                           ; bigdata psect - 0 bytes to load
+   162                           
+   163  000014  EE00 F000          	lfsr	0,0
+   164  000018  0E60               	movlw	96	; loop counter
+   165  00001A                     clear_1:
+   166  00001A  6AEE               	clrf	postinc0,c	; clear, increment FSR0
+   167  00001C  06E8               	decf	wreg,c	; decrement loop counter
+   168  00001E  E1FD               	bnz	clear_1
+   169  000020  EE01 F000          	lfsr	0,256
+   170  000024  EE12 F000          	lfsr	1,512
+   171  000028  EC1A  F000         	call	clear_ram
+   172                           	PSECT	end_init
+   173                           	GLOBAL	__Lmediumconst
+   174  00002C  0E00               	movlw	low highword(__Lmediumconst)
+   175  00002E  6EF8               	movwf	tblptru
+   176  000030  EFA9  F013         	goto	_main		;go do the main stuff
+   177                           ; Clear these memory locations
+   178  000034                     clear_ram:
+   179  000034  6AEE               	clrf	postinc0	;clear, increment FSR0
+   180  000036  50E5               	movf	postdec1,w	;decrement loop variable
+   181  000038  50E1               	movf	fsr1l,w
+   182  00003A  E1FC               	bnz	clear_ram
+   183  00003C  50E2               	movf	fsr1h,w
+   184  00003E  E1FA               	bnz	clear_ram
+   185  000040  0012               	return
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.64 build 5495 
+Symbol Table                                           Sat May 22 08:49:08 2010
+
+          __S1 03B0            wreg 000FE8           _main 2752  
+         _exit 0014           fsr1h 000FE2           fsr1l 000FE1  
+         start 0014          __HRAM 0000          __LRAM 0001  
+       clear_1 001A         tblptru 000FF8     __accesstop 000060  
+      __ramtop 0400  __Lmediumconst 0408        postdec1 000FE5  
+      postinc0 000FEE       clear_ram 0034       intlevel0 2A60  
+     intlevel1 2A60       intlevel2 2A60       intlevel3 2A60  
+     reset_pos 0000  

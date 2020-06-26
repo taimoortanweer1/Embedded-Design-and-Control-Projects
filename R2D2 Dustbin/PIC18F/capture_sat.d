@@ -1,0 +1,1 @@
+ capture_sat.d  capture_sat.p1:  D:/Work/R2D2/PIC18F/capture_sat.c

@@ -1,0 +1,1 @@
+ main.d  main.p1:  D:/Work/R2D2/PIC18F/main.c D:/Work/R2D2/PIC18F/pff.h D:/Work/R2D2/PIC18F/integer.h D:/Work/R2D2/PIC18F/pwm_audio.h D:/Work/R2D2/PIC18F/wave_file.h

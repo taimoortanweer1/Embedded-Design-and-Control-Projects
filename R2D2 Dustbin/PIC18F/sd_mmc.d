@@ -1,0 +1,1 @@
+ sd_mmc.d  sd_mmc.p1:  D:/Work/R2D2/PIC18F/sd_mmc.c D:/Work/R2D2/PIC18F/diskio.h D:/Work/R2D2/PIC18F/integer.h D:/Work/R2D2/PIC18F/spi_pic18.h

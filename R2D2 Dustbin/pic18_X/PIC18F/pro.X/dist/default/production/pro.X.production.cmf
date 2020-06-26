@@ -1,0 +1,1495 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+end_init CODE 0 18 18 4 1
+reset_vec CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\pro.X.production.obj
+intcode CODE 0 8 8 10 1
+smallconst SMALLCONST 0 800 800 8 1
+text42 CODE 0 3CC2 3CC2 18 1
+intcode_body CODE 0 3734 3734 A8 1
+text40 CODE 0 38E2 38E2 82 1
+text39 CODE 0 3AF8 3AF8 56 1
+text38 CODE 0 3D02 3D02 A 1
+text37 CODE 0 3D0C 3D0C 8 1
+text36 CODE 0 3BDA 3BDA 36 1
+text35 CODE 0 3CF0 3CF0 12 1
+text34 CODE 0 3402 3402 E0 1
+text33 CODE 0 34E2 34E2 DA 1
+text32 CODE 0 3314 3314 EE 1
+text31 CODE 0 3C70 3C70 1E 1
+text30 CODE 0 2854 2854 1C6 1
+text29 CODE 0 12CC 12CC 4BE 1
+text28 CODE 0 3C44 3C44 2C 1
+text27 CODE 0 267C 267C 1D8 1
+text26 CODE 0 35BC 35BC D0 1
+text25 CODE 0 178A 178A 3C0 1
+text24 CODE 0 242E 242E 24E 1
+text23 CODE 0 2F9A 2F9A 134 1
+text22 CODE 0 3964 3964 70 1
+text21 CODE 0 30CE 30CE 130 1
+text20 CODE 0 21C0 21C0 26E 1
+text19 CODE 0 2E60 2E60 13A 1
+text18 CODE 0 2D10 2D10 150 1
+text17 CODE 0 2A1A 2A1A 17E 1
+text16 CODE 0 31FE 31FE 116 1
+text15 CODE 0 808 808 59A 1
+text14 CODE 0 3A3C 3A3C 66 1
+text13 CODE 0 DA2 DA2 52A 1
+text12 CODE 0 39D4 39D4 68 1
+text11 CODE 0 1F02 1F02 2BE 1
+text10 CODE 0 2B98 2B98 178 1
+text9 CODE 0 3B4E 3B4E 4E 1
+text8 CODE 0 1B4A 1B4A 3B8 1
+text7 CODE 0 3CA8 3CA8 1A 1
+text6 CODE 0 3CDA 3CDA 16 1
+text5 CODE 0 3C8E 3C8E 1A 1
+text4 CODE 0 3C10 3C10 34 1
+text3 CODE 0 3B9C 3B9C 3E 1
+text2 CODE 0 3860 3860 82 1
+text1 CODE 0 37DC 37DC 84 1
+text0 CODE 0 368C 368C A8 1
+cstackCOMRAM COMRAM 1 1 1 47 1
+cstackBANK0 BANK0 1 60 60 87 1
+bssBANK3 BANK3 1 300 300 100 1
+bssBANK2 BANK2 1 200 200 100 1
+bssBANK1 BANK1 1 100 100 42 1
+bssBANK0 BANK0 1 E7 E7 16 1
+bssCOMRAM COMRAM 1 48 48 9 1
+cinit CODE 0 3AA2 3AA2 56 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0000FD-0000FF 1
+BANK1 000142-0001FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BIGRAM 000051-00005F 1
+BIGRAM 0000FD-0000FF 1
+BIGRAM 000142-0001FF 1
+BIGRAM 000400-0007FF 1
+CODE 000004-000007 1
+CODE 00001C-0007FF 1
+CODE 003D14-007FFF 1
+COMRAM 000051-00005F 1
+CONST 000004-000007 1
+CONST 00001C-0007FF 1
+CONST 003D14-007FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 003D14-007FFF 1
+RAM 0000FD-0000FF 1
+RAM 000142-0001FF 1
+RAM 000400-0007FF 1
+SFR 000F60-000FFF 1
+SMALLCONST 003D14-007FFF 1
+STACK 000400-0007FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\pro.X.production.obj
+"D:\Work\R2D2/PIC18F/pwm_audio.c":76 8 intcode CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":31 8 intcode CODE
+"D:\Work\R2D2/PIC18F/pff.c":704 808 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":710 808 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":713 814 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":714 81E text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":717 83C text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":718 89C text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":719 8C6 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":720 8E0 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":721 8EC text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":723 932 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":724 9E4 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":725 A94 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":726 AB6 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":727 AE0 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":728 AE2 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":729 B0C text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":732 B38 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":733 B5C text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":734 BBE text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":735 BE8 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":736 C16 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":731 C2E text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":738 C4A text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":739 C70 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":740 C94 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":741 CA2 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":742 CDE text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":743 D0C text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":749 D8A text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":751 DA0 text15 CODE
+"D:\Work\R2D2/PIC18F/pff.c":576 DA2 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":585 DA2 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":587 DAE text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":590 DBA text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":591 DCA text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":592 DD8 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":593 DF6 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":595 DFA text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":596 E82 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":599 EC4 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":600 F04 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":602 F90 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":603 1022 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":604 1052 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":605 107C text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":607 1092 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":608 10C8 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":609 10D6 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":610 1152 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":611 1152 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":612 11A4 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":613 11BC text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":614 1246 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":615 124E text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":616 1286 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":598 12A6 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":619 12AE text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":622 12B2 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":623 12C8 text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":624 12CA text13 CODE
+"D:\Work\R2D2/PIC18F/pff.c":456 12CC text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":464 12CC text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":465 12D4 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":467 12DC text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":468 12E6 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":471 12EA text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":472 1302 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":473 1326 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":475 132E text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":476 1364 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":478 1368 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":479 1370 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":480 1380 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":484 13A4 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":485 13AE text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":488 13BA text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":490 13F4 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":491 1408 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":493 1426 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":494 1456 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":495 149A text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":496 14AC text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":497 14C4 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":498 14D8 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":501 14F6 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":502 15D0 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":504 15F4 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":505 15FA text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":506 161C text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":508 1638 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":513 163E text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":515 164C text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":516 1656 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":519 167C text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":520 16D8 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":522 176E text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":523 177E text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":525 1786 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":526 1788 text29 CODE
+"D:\Work\R2D2/PIC18F/pff.c":65 178A text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":71 178A text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":74 1796 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":75 17E0 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":78 17E2 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":79 17E2 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":80 1804 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":81 182A text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":82 1836 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":84 1896 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":85 18F8 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":87 1974 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":88 197C text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":91 19C6 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":92 1A52 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":95 1A64 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":96 1AFE text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":77 1B1C text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":100 1B38 text25 CODE
+"D:\Work\R2D2/PIC18F/pff.c":101 1B48 text25 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":85 1B4A text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":91 1B4A text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":93 1B64 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":94 1B78 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":95 1BAE text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":96 1BB2 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":98 1BCA text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":100 1BEE text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":101 1C22 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":103 1C6E text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":105 1C80 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":100 1C88 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":107 1C9E text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":109 1CAA text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":111 1CC0 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":113 1CE4 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":114 1D18 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":116 1D5C text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":118 1D6E text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":113 1D76 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":120 1D8C text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":122 1D98 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":124 1DB0 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":125 1DD4 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":126 1E48 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":128 1E54 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":130 1E6A text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":131 1E8E text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":132 1EF2 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":135 1EFC text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":140 1F00 text8 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":37 1F02 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":41 1F02 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":42 1F30 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":45 1F72 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":46 1F96 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":47 1FA2 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":48 1FB2 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":50 1FC2 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":52 1FC4 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":53 2010 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":54 2034 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":55 2066 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":57 206E text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":58 207A text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":59 2090 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":61 2090 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":62 209C text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":63 20B4 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":65 20B4 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":66 20C4 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":67 20D8 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":69 20DA text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":70 20DA text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":75 20EC text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":76 2118 text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":79 211A text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":50 211E text11 CODE
+"D:\Work\R2D2/PIC18F/wave_file.c":83 21BE text11 CODE
+"D:\Work\R2D2/PIC18F/pff.c":371 21C0 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":380 21C0 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":381 21F2 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":382 2222 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":384 223C text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":385 226E text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":386 2282 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":388 22A2 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":390 22A4 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":391 22C4 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":392 22CC text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":393 22E0 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":394 22E8 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":398 2318 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":399 233C text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":400 2354 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":401 2372 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":407 237A text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":408 2426 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":411 2428 text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":412 242C text20 CODE
+"D:\Work\R2D2/PIC18F/pff.c":161 242E text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":167 242E text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":170 243A text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":171 245A text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":172 248A text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":174 248C text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":175 24A4 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":177 24BA text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":178 24E2 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":182 250E text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":183 2560 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":184 2590 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":185 25BA text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":186 25F8 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":187 25FC text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":188 2620 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":193 2664 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":195 2678 text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":196 267A text24 CODE
+"D:\Work\R2D2/PIC18F/pff.c":280 267C text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":289 267C text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":290 2690 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":291 26AC text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":292 26B8 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":294 26C8 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":295 2700 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":296 270E text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":297 271E text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":298 272E text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":299 2736 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":305 2738 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":306 2782 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":307 27BA text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":308 27D0 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":310 27E6 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":311 27F8 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":314 2810 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":316 2834 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":318 2850 text27 CODE
+"D:\Work\R2D2/PIC18F/pff.c":319 2852 text27 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":144 2854 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":149 2854 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":154 2858 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":156 2868 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":157 286C text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":159 288A text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":160 28A6 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":161 28CA text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":162 28D8 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":163 290C text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":164 2930 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":165 2954 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":170 296E text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":171 298E text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":173 2996 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":175 299E text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":176 29D2 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":177 29F6 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":180 29FA text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":181 29FE text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":183 2A02 text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":185 2A0C text30 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":186 2A18 text30 CODE
+"D:\Work\R2D2/PIC18F/pff.c":329 2A1A text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":338 2A1A text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":339 2A26 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":340 2A4E text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":341 2A62 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":342 2A68 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":343 2A7C text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":344 2A84 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":345 2A90 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":341 2AA0 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":347 2AA8 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":348 2ABC text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":349 2ACC text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":350 2AD2 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":351 2AE6 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":352 2AEE text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":349 2AFE text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":355 2B06 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":356 2B22 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":357 2B4A text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":358 2B6A text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":360 2B8A text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":361 2B96 text17 CODE
+"D:\Work\R2D2/PIC18F/pff.c":535 2B98 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":542 2B98 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":545 2BA4 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":546 2BAE text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":548 2BB2 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":549 2BC8 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":550 2BE6 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":551 2BF6 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":552 2C1A text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":553 2C28 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":554 2C36 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":560 2C3A text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":561 2CB2 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":562 2CDC text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":563 2CF6 text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":565 2D0C text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":566 2D0E text10 CODE
+"D:\Work\R2D2/PIC18F/pff.c":240 2D10 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":248 2D10 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":249 2D16 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":250 2D2E text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":252 2D30 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":253 2DA4 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":254 2DAC text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":255 2DBA text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":256 2DC8 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":257 2DE2 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":259 2DFC text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":260 2E0C text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":250 2E14 text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":263 2E3E text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":265 2E5A text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":266 2E5E text18 CODE
+"D:\Work\R2D2/PIC18F/pff.c":761 2E60 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":768 2E60 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":771 2E6C text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":772 2E76 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":774 2E7A text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":775 2E98 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":776 2EB6 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":777 2ED6 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":778 2EDC text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":779 2EE4 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":784 2EEA text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":785 2F62 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":786 2F64 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":789 2F6A text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":790 2F70 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":792 2F84 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":793 2F94 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":795 2F94 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":796 2F98 text19 CODE
+"D:\Work\R2D2/PIC18F/pff.c":131 2F9A text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":136 2F9A text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":139 2FA2 text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":140 2FB2 text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":141 2FCE text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":142 300A text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":144 300E text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":145 3028 text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":147 3044 text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":148 3060 text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":150 30CA text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":151 30CC text23 CODE
+"D:\Work\R2D2/PIC18F/pff.c":206 30CE text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":214 30CE text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":215 30DE text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":217 30E6 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":220 30FE text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":221 316E text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":222 3176 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":223 3184 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":224 3192 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":226 31E0 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":227 31F0 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":229 31F8 text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":230 31FC text21 CODE
+"D:\Work\R2D2/PIC18F/pff.c":805 31FE text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":812 31FE text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":815 320A text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":816 3214 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":818 3218 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":819 3236 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":820 3254 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":821 325E text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":823 3270 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":824 3284 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":825 328E text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":826 32A8 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":828 32AE text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":829 32B4 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":830 32D0 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":831 32E4 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":832 32EE text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":833 3308 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":839 330E text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":840 3312 text16 CODE
+"D:\Work\R2D2/PIC18F/pff.c":422 3314 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":427 3314 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":428 3346 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":429 334A text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":430 3362 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":432 3366 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":435 33B0 text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":436 33FA text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":438 33FE text32 CODE
+"D:\Work\R2D2/PIC18F/pff.c":439 3400 text32 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":66 3402 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":67 3402 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":74 3404 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":75 3406 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":77 3408 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":78 3414 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":79 3418 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":81 3418 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":82 341C text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":87 341E text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":88 3424 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":89 342A text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":90 3430 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":91 3436 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":92 343C text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":93 3440 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":94 344C text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":95 3458 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":98 345E text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":100 3468 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":102 346C text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":103 3472 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":105 347A text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":110 3482 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":111 3488 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":112 348E text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":113 3494 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":114 349A text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":115 34A0 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":116 34A4 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":117 34B0 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":118 34BC text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":121 34C2 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":123 34CC text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":125 34D0 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":126 34D6 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":128 34DE text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":129 34E0 text34 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":194 34E2 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":206 34E2 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":208 34F6 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":209 34FA text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":211 3516 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":213 351E text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":214 3524 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":216 3538 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":217 3540 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":220 3564 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":221 356C text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":226 357E text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":227 3590 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":230 359E text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":232 35B0 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":236 35B4 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":238 35B8 text33 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":239 35BA text33 CODE
+"D:\Work\R2D2/PIC18F/pff.c":111 35BC text26 CODE
+"D:\Work\R2D2/PIC18F/pff.c":115 35BC text26 CODE
+"D:\Work\R2D2/PIC18F/pff.c":118 35C4 text26 CODE
+"D:\Work\R2D2/PIC18F/pff.c":119 35D0 text26 CODE
+"D:\Work\R2D2/PIC18F/pff.c":120 3618 text26 CODE
+"D:\Work\R2D2/PIC18F/pff.c":121 368A text26 CODE
+"D:\Work\R2D2/PIC18F/main.c":101 368C text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":110 368C text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":114 3690 text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":116 36A6 text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":118 36CE text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":119 36EE text0 CODE
+"D:\Work\R2D2/PIC18F/main.c":117 3702 text0 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":76 3734 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":79 3762 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":81 3768 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":82 376C intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":84 3770 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":86 3786 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":87 378A intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":89 3792 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":92 379E intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":95 37A0 intcode_body CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":98 37A2 intcode_body CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":4 37DC text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":6 37DC text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":7 37DE text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":8 380E text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":9 3818 text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":6 3840 text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":11 3856 text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c":12 385E text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":4 3860 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":6 3860 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":7 3862 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":8 388E text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":10 38C0 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":11 38C4 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":6 38C8 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":13 38D8 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c":14 38E0 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":8 38E2 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":14 38E2 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":15 38F2 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":16 38FE text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":17 3902 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":18 3904 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":19 390E text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":17 3910 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":22 3914 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":23 391E text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":24 3932 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":25 3942 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":27 3944 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":28 394E text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":29 3952 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":30 3952 text40 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c":31 3962 text40 CODE
+"D:\Work\R2D2/PIC18F/pff.c":51 3964 text22 CODE
+"D:\Work\R2D2/PIC18F/pff.c":52 3964 text22 CODE
+"D:\Work\R2D2/PIC18F/pff.c":53 3974 text22 CODE
+"D:\Work\R2D2/PIC18F/pff.c":54 397C text22 CODE
+"D:\Work\R2D2/PIC18F/pff.c":55 39CA text22 CODE
+"D:\Work\R2D2/PIC18F/pff.c":56 39D2 text22 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":126 39D4 text12 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":130 39D4 text12 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":131 3A32 text12 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":132 3A36 text12 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":133 3A3A text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":8 3A3C text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":13 3A3C text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":14 3A48 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":15 3A4C text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":16 3A4E text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":17 3A58 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":15 3A5A text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":20 3A5E text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":21 3A72 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":22 3A82 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":23 3A8C text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":24 3A90 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":25 3A90 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c":26 3AA0 text14 CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":1951 3AA2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":1953 3AA2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":1956 3AA2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2017 3AA2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2018 3AA6 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2019 3AAA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2020 3AAA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2021 3AAC cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2022 3AAE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2023 3AB0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2024 3AB2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2025 3AB4 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2028 3AB6 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2029 3ABA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2030 3ABE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2031 3ABE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2032 3AC0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2033 3AC2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2034 3AC4 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2035 3AC6 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2036 3AC8 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2039 3ACA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2040 3ACE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2041 3AD0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2042 3AD0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2043 3AD2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2044 3AD4 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2047 3AD6 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2048 3ADA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2049 3ADC cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2050 3ADC cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2051 3ADE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2052 3AE0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2055 3AE2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2056 3AE6 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2057 3AE8 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2058 3AE8 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2059 3AEA cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2060 3AEC cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2066 3AEE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2068 3AEE cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2069 3AF0 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2070 3AF2 cinit CODE
+"C:\Users\Taimoor\AppData\Local\Temp\s4n0.":2071 3AF4 cinit CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":15 3AF8 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":119 3AF8 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":121 3B08 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":122 3B0C text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":123 3B1C text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":124 3B26 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":125 3B30 text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":128 3B3C text39 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c":129 3B4C text39 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":135 3B4E text9 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":138 3B50 text9 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":139 3B72 text9 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":140 3B86 text9 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":142 3B98 text9 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":143 3B9A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":4 3B9C text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":8 3B9C text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":9 3BA4 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":10 3BA6 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":9 3BAA text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":12 3BBC text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c":13 3BD8 text3 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":48 3BDA text36 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":51 3BDA text36 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":55 3BEA text36 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":56 3BF0 text36 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":58 3C0C text36 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":59 3C0E text36 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":4 3C10 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":6 3C10 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":7 3C10 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":8 3C1E text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":9 3C28 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":10 3C3A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c":11 3C42 text4 CODE
+"D:\Work\R2D2/PIC18F/pff.c":44 3C44 text28 CODE
+"D:\Work\R2D2/PIC18F/pff.c":45 3C44 text28 CODE
+"D:\Work\R2D2/PIC18F/pff.c":46 3C4C text28 CODE
+"D:\Work\R2D2/PIC18F/pff.c":47 3C6C text28 CODE
+"D:\Work\R2D2/PIC18F/pff.c":46 3C6E text28 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":9 3C70 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":11 3C70 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":12 3C72 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":13 3C74 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":14 3C76 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":16 3C78 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":18 3C7A text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":19 3C7E text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":21 3C82 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":22 3C84 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":24 3C86 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":25 3C88 text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":27 3C8A text31 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":28 3C8C text31 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":103 3C8E text5 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":105 3C8E text5 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":106 3C92 text5 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":108 3C96 text5 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":109 3CA6 text5 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":27 3CA8 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":29 3CA8 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":30 3CAC text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":33 3CB0 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":34 3CB4 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":37 3CB8 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":38 3CBC text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":41 3CC0 text7 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":43 3CC2 text42 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":45 3CC4 text42 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":46 3CCC text42 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":47 3CD0 text42 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":48 3CD8 text42 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":57 3CDA text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":59 3CDA text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":61 3CDC text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":63 3CDE text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":64 3CE2 text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":66 3CE6 text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":67 3CE8 text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":69 3CEA text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":72 3CEC text6 CODE
+"D:\Work\R2D2/PIC18F/pwm_audio.c":73 3CEE text6 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":30 3CF0 text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":33 3CF2 text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":34 3CF6 text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":36 3CF8 text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":38 3CFC text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":39 3CFE text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":38 3D00 text35 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":41 3D02 text38 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":46 3D02 text38 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":47 3D04 text38 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":49 3D08 text38 CODE
+"D:\Work\R2D2/PIC18F/spi_pic18.c":51 3D0A text38 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":37 3D0C text37 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":39 3D0C text37 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":40 3D0E text37 CODE
+"D:\Work\R2D2/PIC18F/sd_mmc.c":41 3D12 text37 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+mem_set@d 16 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_init_spi 3C8E 0 CODE 0 text31 dist/default/production\pro.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+___lldiv@counter 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+create_name@dj 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_Fs 100 0 BANK1 1 bssBANK1 dist/default/production\pro.X.production.obj
+_rb FB 0 BANK0 1 bssBANK0 dist/default/production\pro.X.production.obj
+__end_of_load_header 21C0 0 CODE 0 text11 dist/default/production\pro.X.production.obj
+_PR2 FCB 0 ABS 0 - dist/default/production\pro.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\pro.X.production.obj
+__S1 400 0 ABS 0 - dist/default/production\pro.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_set_sampling_rate 3A3C 0 CODE 0 text12 dist/default/production\pro.X.production.obj
+disk_readp@res 29 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\pro.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\pro.X.production.obj
+_Fno 12C 0 BANK1 1 bssBANK1 dist/default/production\pro.X.production.obj
+pf_lseek@bcs 82 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+get_fileinfo@p 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_isr 8 0 CODE 0 intcode dist/default/production\pro.X.production.obj
+dir_rewind@dj 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_Dir1 EB 0 BANK0 1 bssBANK0 dist/default/production\pro.X.production.obj
+get_fat@bc 6A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_play_wave_file 1B4A 0 CODE 0 text8 dist/default/production\pro.X.production.obj
+_Buff 200 0 BANK2 1 bssBANK2 dist/default/production\pro.X.production.obj
+pf_readdir@res B1 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_open@path 8D 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_main 368C 0 CODE 0 text0 dist/default/production\pro.X.production.obj
+follow_path@res 8C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+disk_readp@rc 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+send_cmd@n 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_load_header 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+mem_cmp@r 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+start 18 0 CODE 0 init C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__size_of_set_sampling_rate 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_dir_read 2D10 0 CODE 0 text18 dist/default/production\pro.X.production.obj
+mem_cmp@s 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+dir_next@i 74 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_clust2sect 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_opendir@res C7 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_follow_path 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production\pro.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production\pro.X.production.obj
+_send_cmd 3402 0 CODE 0 text34 dist/default/production\pro.X.production.obj
+strlen@cp 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\pro.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\pro.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\pro.X.production.obj
+_T2CON FCA 0 ABS 0 - dist/default/production\pro.X.production.obj
+follow_path@path 7C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_dir_find 30CE 0 CODE 0 text21 dist/default/production\pro.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\pro.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\pro.X.production.obj
+dir_read@dir 7B 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_readdir@dj 7F 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+?___llmod 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+wait_ready@res 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+set_sampling_rate@preload 25 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_pf_lseek 808 0 CODE 0 text15 dist/default/production\pro.X.production.obj
+create_name@si 27 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_WAV_L_BUFF 300 0 BANK3 1 bssBANK3 dist/default/production\pro.X.production.obj
+_CardType 4E 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+dir_find@dir 77 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\pro.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\pro.X.production.obj
+_FatFs 48 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production\pro.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production\pro.X.production.obj
+pf_open@dj C6 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_opendir@dj 8D 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\pro.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\pro.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\pro.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\pro.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\pro.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\pro.X.production.obj
+__end_of__stringdata 806 0 SMALLCONST 0 smallconst dist/default/production\pro.X.production.obj
+_wav_putc 3B4E 0 CODE 0 text9 dist/default/production\pro.X.production.obj
+__end_of_xmit_spi 3D02 0 CODE 0 text35 dist/default/production\pro.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\pro.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\pro.X.production.obj
+__size_of_release_spi 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\pro.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\pro.X.production.obj
+?_get_fat 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_init_spi 3C70 0 CODE 0 text31 dist/default/production\pro.X.production.obj
+_xmit_spi 3CF0 0 CODE 0 text35 dist/default/production\pro.X.production.obj
+_check_fs 3314 0 CODE 0 text32 dist/default/production\pro.X.production.obj
+?_mem_cmp 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+get_fat@wc 66 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_disk_initialize 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\pro.X.production.obj
+follow_path@dj 7A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_follow_path 21C0 0 CODE 0 text20 dist/default/production\pro.X.production.obj
+?_strncmp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+set_sampling_rate@rate 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pro.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pro.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_pwm_init 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_LATCbits F8B 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pro.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pro.X.production.obj
+_CCPR1L FBE 0 ABS 0 - dist/default/production\pro.X.production.obj
+_CCPR2L FBB 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_pf_read 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_send_cmd 34E2 0 CODE 0 text34 dist/default/production\pro.X.production.obj
+?___lldiv 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_xmit_spi 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_pwm_init 3CA8 0 CODE 0 text7 dist/default/production\pro.X.production.obj
+pf_read@br 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pro.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pro.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\pro.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\pro.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\pro.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\pro.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\pro.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\pro.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pro.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\pro.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\pro.X.production.obj
+__end_of_strlen 3BDA 0 CODE 0 text3 dist/default/production\pro.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\pro.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\pro.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\pro.X.production.obj
+__Hintcode 18 0 CODE 0 intcode dist/default/production\pro.X.production.obj
+_SSPBUF FC9 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\pro.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\pro.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\pro.X.production.obj
+pf_read@dr 77 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\pro.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\pro.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\pro.X.production.obj
+__end_of_rcv_spi 3D0C 0 CODE 0 text38 dist/default/production\pro.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_pWAVIN 4A 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+create_name@i 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_pf_open 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_load_header 1F02 0 CODE 0 text11 dist/default/production\pro.X.production.obj
+follow_path@dir 8A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_lseek@clst 86 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__end_of_get_fat 1B4A 0 CODE 0 text25 dist/default/production\pro.X.production.obj
+_pf_mount 12CC 0 CODE 0 text29 dist/default/production\pro.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pro.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pro.X.production.obj
+__size_of_pf_readdir 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_dir_next 242E 0 CODE 0 text24 dist/default/production\pro.X.production.obj
+dir_read@res 7E 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_read@fs 8A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_release_spi 3D0C 0 CODE 0 text37 dist/default/production\pro.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+load_header@sz 98 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+send_cmd@res 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+dir_read@dj 44 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_lseek@ofs 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_disk_readp 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+dir_find@res 79 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_pf_opendir 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_open@fs C4 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+get_fat@fs 6C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+dir_find@dj 44 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_disk_initialize 2A1A 0 CODE 0 text30 dist/default/production\pro.X.production.obj
+?_clust2sect 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_read@sect 7C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_dir_rewind$154 31 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+dir_next@clst 70 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\pro.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\pro.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_dir_find 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_readdir@sp A3 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_dir_next 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+load_header@SamplingRate 94 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_open@sp 97 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+strchr@chr 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pro.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pro.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_mount@bsect 8C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_strlen 3B9C 0 CODE 0 text3 dist/default/production\pro.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\pro.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\pro.X.production.obj
+stacklo 400 0 ABS 0 - C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\pro.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\pro.X.production.obj
+_strchr 3C10 0 CODE 0 text4 dist/default/production\pro.X.production.obj
+__CFG_BOR$ON 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+___lmul 3AF8 0 CODE 0 text39 dist/default/production\pro.X.production.obj
+__Hinit 18 0 CODE 0 init dist/default/production\pro.X.production.obj
+__Linit 18 0 CODE 0 init dist/default/production\pro.X.production.obj
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\pro.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\pro.X.production.obj
+_pwm_audio_init 3C8E 0 CODE 0 text5 dist/default/production\pro.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\pro.X.production.obj
+__end_of_main 3734 0 CODE 0 text0 dist/default/production\pro.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\pro.X.production.obj
+pf_opendir@sp B9 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\pro.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\pro.X.production.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_strstr 37DC 0 CODE 0 text1 dist/default/production\pro.X.production.obj
+___lmul@multiplier 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+dir_next@dj 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_strchr 3C44 0 CODE 0 text4 dist/default/production\pro.X.production.obj
+end_of_initialization 3AEE 0 CODE 0 cinit dist/default/production\pro.X.production.obj
+disk_readp@cnt 25 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+___lmul@multiplicand 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_SSPCON1 FC6 0 ABS 0 - dist/default/production\pro.X.production.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_create_name 2854 0 CODE 0 text27 dist/default/production\pro.X.production.obj
+__size_of_strncmp 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production\pro.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\pro.X.production.obj
+_T1CONbits FCD 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_mount@fmt 94 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+strchr@ptr 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_wav_putc 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+disk_readp@bc 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\pro.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\pro.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_CCP1CON FBD 0 ABS 0 - dist/default/production\pro.X.production.obj
+_CCP2CON FBA 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\pro.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\pro.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\pro.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\pro.X.production.obj
+__size_of_send_cmd 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\pro.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\pro.X.production.obj
+disk_readp@lba 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\pro.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\pro.X.production.obj
+_get_fat$110 60 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\pro.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\pro.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\pro.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\pro.X.production.obj
+__end_of___lmul 3B4E 0 CODE 0 text39 dist/default/production\pro.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\pro.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\pro.X.production.obj
+?_load_header 8C 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hpowerup 18 0 CODE 0 powerup dist/default/production\pro.X.production.obj
+_SSPSTAT FC7 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lpowerup 18 0 CODE 0 powerup dist/default/production\pro.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\pro.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\pro.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\pro.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\pro.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\pro.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\pro.X.production.obj
+_SSPCON1bits FC6 0 ABS 0 - dist/default/production\pro.X.production.obj
+mem_cmp@src 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+get_fileinfo@dj 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\pro.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\pro.X.production.obj
+__ptext0 368C 0 CODE 0 text0 dist/default/production\pro.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\pro.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\pro.X.production.obj
+get_fat@buf 62 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__ptext1 37DC 0 CODE 0 text1 dist/default/production\pro.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\pro.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\pro.X.production.obj
+__ptext2 3860 0 CODE 0 text2 dist/default/production\pro.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\pro.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\pro.X.production.obj
+__ptext3 3B9C 0 CODE 0 text3 dist/default/production\pro.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\pro.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\pro.X.production.obj
+__size_of_play_wave_file 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__ptext4 3C10 0 CODE 0 text4 dist/default/production\pro.X.production.obj
+_pWAVOUT 4C 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\pro.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\pro.X.production.obj
+__ptext5 3C8E 0 CODE 0 text5 dist/default/production\pro.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\pro.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\pro.X.production.obj
+__ptext6 3CDA 0 CODE 0 text6 dist/default/production\pro.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pro.X.production.obj
+create_name@sfn 28 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pro.X.production.obj
+__end_of_play_wave_file 1F02 0 CODE 0 text8 dist/default/production\pro.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\pro.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\pro.X.production.obj
+__ptext7 3CA8 0 CODE 0 text7 dist/default/production\pro.X.production.obj
+__pbssCOMRAM 48 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\pro.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\pro.X.production.obj
+__ptext8 1B4A 0 CODE 0 text8 dist/default/production\pro.X.production.obj
+_timer1_init 3CDA 0 CODE 0 text6 dist/default/production\pro.X.production.obj
+__ptext9 3B4E 0 CODE 0 text9 dist/default/production\pro.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\pro.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\pro.X.production.obj
+mem_set@val 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_read@rcnt 88 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_set_sampling_rate 39D4 0 CODE 0 text12 dist/default/production\pro.X.production.obj
+pf_lseek@fs 8A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_get_fileinfo 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_mount@tsect 84 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__end_of_check_fs 3402 0 CODE 0 text32 dist/default/production\pro.X.production.obj
+_dir_rewind 2F9A 0 CODE 0 text23 dist/default/production\pro.X.production.obj
+__end_of__initialization 3AEE 0 CODE 0 cinit dist/default/production\pro.X.production.obj
+strncmp@len 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_NumChannels E9 0 BANK0 1 bssBANK0 dist/default/production\pro.X.production.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_strstr 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\pro.X.production.obj
+get_fileinfo@dir 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+get_fileinfo@fno 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_mount@fs 33 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+dir_next@fs 6E 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_pf_mount 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_get_fileinfo 2A1A 0 CODE 0 text17 dist/default/production\pro.X.production.obj
+__end_of_get_fileinfo 2B98 0 CODE 0 text17 dist/default/production\pro.X.production.obj
+_pf_read DA2 0 CODE 0 text13 dist/default/production\pro.X.production.obj
+strlen@s 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\pro.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\pro.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\pro.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\pro.X.production.obj
+pf_lseek@sect 7A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\pro.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\pro.X.production.obj
+__CFG_PLLDIV$12 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_release_spi 3D14 0 CODE 0 text37 dist/default/production\pro.X.production.obj
+__end_of_dir_read 2E60 0 CODE 0 text18 dist/default/production\pro.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\pro.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\pro.X.production.obj
+int_func 3734 0 CODE 0 intcode_body dist/default/production\pro.X.production.obj
+___llmod 3A3C 0 CODE 0 text14 dist/default/production\pro.X.production.obj
+__end_of___lldiv 3964 0 CODE 0 text40 dist/default/production\pro.X.production.obj
+check_fs@sect 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+disk_readp@buff 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_disk_readp 34E2 0 CODE 0 text33 dist/default/production\pro.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production\pro.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production\pro.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\pro.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_isr 37DC 0 CODE 0 intcode_body dist/default/production\pro.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_pf_open 2B98 0 CODE 0 text10 dist/default/production\pro.X.production.obj
+pf_open@dir A3 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hspace_1 400 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+?_strlen 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_rcv_spi 3D02 0 CODE 0 text38 dist/default/production\pro.X.production.obj
+_get_fat 178A 0 CODE 0 text25 dist/default/production\pro.X.production.obj
+_mem_cmp 3964 0 CODE 0 text22 dist/default/production\pro.X.production.obj
+__Hsmallconst 808 0 SMALLCONST 0 smallconst dist/default/production\pro.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\pro.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\pro.X.production.obj
+__size_of_mem_cmp 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_mem_set 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+?_strchr 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+?___lmul 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_strncmp 3860 0 CODE 0 text2 dist/default/production\pro.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\pro.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\pro.X.production.obj
+_mem_set 3C44 0 CODE 0 text28 dist/default/production\pro.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\pro.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\pro.X.production.obj
+pf_read@clst 84 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__end_of_mem_set 3C70 0 CODE 0 text28 dist/default/production\pro.X.production.obj
+___lldiv 38E2 0 CODE 0 text40 dist/default/production\pro.X.production.obj
+__pcinit 3AA2 0 CODE 0 cinit dist/default/production\pro.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+send_cmd@cmd 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_disk_readp 35BC 0 CODE 0 text33 dist/default/production\pro.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_read@remain 80 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_opendir@path 8F 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\pro.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\pro.X.production.obj
+strncmp@s1 16 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_disk_initialize 2854 0 CODE 0 text30 dist/default/production\pro.X.production.obj
+?_strstr 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+get_fat@clst 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+strncmp@s2 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_check_fs 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+get_fat@ofs 68 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_lseek@ifptr 7E 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+_disk_initialize$807 22 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_clust2sect 35BC 0 CODE 0 text26 dist/default/production\pro.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_open@res C3 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_strchr 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+wait_ready@timeout 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_readdir@dir 83 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_readdir@fno 81 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_dir_read 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_pf_readdir 31FE 0 CODE 0 text16 dist/default/production\pro.X.production.obj
+__end_of_clust2sect 368C 0 CODE 0 text26 dist/default/production\pro.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+xmit_spi@temp 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_opendir@dir 99 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+play_wave_file@sz DD 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+pf_read@btr 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pro.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pro.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__pbssBANK0 E7 0 BANK0 1 bssBANK0 dist/default/production\pro.X.production.obj
+mem_cmp@cnt 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+mem_set@cnt 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_dir_rewind 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\pro.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\pro.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\pro.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\pro.X.production.obj
+__end_of_dir_next 267C 0 CODE 0 text24 dist/default/production\pro.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\pro.X.production.obj
+create_name@c 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_pf_opendir 2E60 0 CODE 0 text19 dist/default/production\pro.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\pro.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\pro.X.production.obj
+__ptext10 2B98 0 CODE 0 text10 dist/default/production\pro.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\pro.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\pro.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\pro.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\pro.X.production.obj
+create_name@ni 26 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__ptext20 21C0 0 CODE 0 text20 dist/default/production\pro.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\pro.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\pro.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\pro.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\pro.X.production.obj
+__ptext11 1F02 0 CODE 0 text11 dist/default/production\pro.X.production.obj
+__ptext30 2854 0 CODE 0 text30 dist/default/production\pro.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\pro.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\pro.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\pro.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\pro.X.production.obj
+__ptext21 30CE 0 CODE 0 text21 dist/default/production\pro.X.production.obj
+__ptext40 38E2 0 CODE 0 text40 dist/default/production\pro.X.production.obj
+__end_of_dir_rewind 30CE 0 CODE 0 text23 dist/default/production\pro.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\pro.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\pro.X.production.obj
+__ptext12 39D4 0 CODE 0 text12 dist/default/production\pro.X.production.obj
+__ptext31 3C70 0 CODE 0 text31 dist/default/production\pro.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\pro.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\pro.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\pro.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\pro.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\pro.X.production.obj
+__end_of_pwm_audio_init 3CA8 0 CODE 0 text5 dist/default/production\pro.X.production.obj
+__ptext22 3964 0 CODE 0 text22 dist/default/production\pro.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\pro.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production\pro.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\pro.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production\pro.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\pro.X.production.obj
+__ptext13 DA2 0 CODE 0 text13 dist/default/production\pro.X.production.obj
+__ptext32 3314 0 CODE 0 text32 dist/default/production\pro.X.production.obj
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/default/production\pro.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\pro.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\pro.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\pro.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\pro.X.production.obj
+__ptext23 2F9A 0 CODE 0 text23 dist/default/production\pro.X.production.obj
+__ptext42 3CC2 0 CODE 0 text42 dist/default/production\pro.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\pro.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\pro.X.production.obj
+__ptext14 3A3C 0 CODE 0 text14 dist/default/production\pro.X.production.obj
+__ptext33 34E2 0 CODE 0 text33 dist/default/production\pro.X.production.obj
+play_wave_file@fn D6 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\pro.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\pro.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\pro.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\pro.X.production.obj
+__ptext24 242E 0 CODE 0 text24 dist/default/production\pro.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\pro.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\pro.X.production.obj
+__ptext15 808 0 CODE 0 text15 dist/default/production\pro.X.production.obj
+__ptext34 3402 0 CODE 0 text34 dist/default/production\pro.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\pro.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\pro.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\pro.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\pro.X.production.obj
+__ptext25 178A 0 CODE 0 text25 dist/default/production\pro.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\pro.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\pro.X.production.obj
+__ptext16 31FE 0 CODE 0 text16 dist/default/production\pro.X.production.obj
+__ptext35 3CF0 0 CODE 0 text35 dist/default/production\pro.X.production.obj
+mem_cmp@dst 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_pf_lseek 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\pro.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\pro.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\pro.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\pro.X.production.obj
+__HbssBANK3 0 0 ABS 0 bssBANK3 dist/default/production\pro.X.production.obj
+__ptext26 35BC 0 CODE 0 text26 dist/default/production\pro.X.production.obj
+__LbssBANK3 0 0 ABS 0 bssBANK3 dist/default/production\pro.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\pro.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\pro.X.production.obj
+___llmod@divisor 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__ptext17 2A1A 0 CODE 0 text17 dist/default/production\pro.X.production.obj
+__ptext36 3BDA 0 CODE 0 text36 dist/default/production\pro.X.production.obj
+__end_of_strncmp 38E2 0 CODE 0 text2 dist/default/production\pro.X.production.obj
+__pbssBANK3 300 0 BANK3 1 bssBANK3 dist/default/production\pro.X.production.obj
+mem_set@dst 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production\pro.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\pro.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production\pro.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\pro.X.production.obj
+__ptext27 267C 0 CODE 0 text27 dist/default/production\pro.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\pro.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\pro.X.production.obj
+pf_mount@mclst 88 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__ptext18 2D10 0 CODE 0 text18 dist/default/production\pro.X.production.obj
+__ptext37 3D0C 0 CODE 0 text37 dist/default/production\pro.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\pro.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\pro.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\pro.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\pro.X.production.obj
+__ptext28 3C44 0 CODE 0 text28 dist/default/production\pro.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\pro.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\pro.X.production.obj
+__ptext19 2E60 0 CODE 0 text19 dist/default/production\pro.X.production.obj
+__ptext38 3D02 0 CODE 0 text38 dist/default/production\pro.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\pro.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\pro.X.production.obj
+__ptext29 12CC 0 CODE 0 text29 dist/default/production\pro.X.production.obj
+__ptext39 3AF8 0 CODE 0 text39 dist/default/production\pro.X.production.obj
+__end_of_strstr 3860 0 CODE 0 text1 dist/default/production\pro.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hend_init 1C 0 CODE 0 end_init dist/default/production\pro.X.production.obj
+__Lend_init 18 0 CODE 0 end_init dist/default/production\pro.X.production.obj
+_wait_ready 3BDA 0 CODE 0 text36 dist/default/production\pro.X.production.obj
+___lldiv@divisor 14 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_pf_open 2D10 0 CODE 0 text10 dist/default/production\pro.X.production.obj
+create_name@d 23 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_read@rbuff 78 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+play_wave_file@i E3 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__end_of___llmod 3AA2 0 CODE 0 text14 dist/default/production\pro.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__end_of_pf_opendir 2F9A 0 CODE 0 text19 dist/default/production\pro.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\pro.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\pro.X.production.obj
+get_fileinfo@c 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_timer1_init 3CF0 0 CODE 0 text6 dist/default/production\pro.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_read@buff 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_pf_read$348 7A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+create_name@p 24 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+strstr@s1 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_dir_find 31FE 0 CODE 0 text21 dist/default/production\pro.X.production.obj
+send_cmd@arg 15 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__stringdata 801 0 SMALLCONST 0 smallconst dist/default/production\pro.X.production.obj
+strstr@s2 21 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__end_of_pwm_init 3CC2 0 CODE 0 text7 dist/default/production\pro.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\pro.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\pro.X.production.obj
+__pintcode_body 3734 0 CODE 0 intcode_body dist/default/production\pro.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+get_fileinfo@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__size_of_pwm_audio_init 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+intlevel0 0 0 CODE 0 text C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+play_wave_file@amplitude E1 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_get_fat 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+set_pwm1_duty@duty1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+intlevel1 0 0 CODE 0 text C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+disk_initialize@n 28 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_mem_cmp 39D4 0 CODE 0 text22 dist/default/production\pro.X.production.obj
+intlevel2 0 0 CODE 0 text C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+disk_initialize@ty 25 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_pf_lseek DA2 0 CODE 0 text15 dist/default/production\pro.X.production.obj
+_set_pwm1_duty 3CC2 0 CODE 0 text42 dist/default/production\pro.X.production.obj
+intlevel3 0 0 CODE 0 text C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+dir_rewind@clst 37 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+disk_initialize@cmd 24 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+disk_initialize@ocr 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+disk_initialize@tmr 26 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+_TMR1H_preload 4F 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+_create_name 267C 0 CODE 0 text27 dist/default/production\pro.X.production.obj
+_TMR1L_preload 50 0 COMRAM 1 bssCOMRAM dist/default/production\pro.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+_BitsPerSample E7 0 BANK0 1 bssBANK0 dist/default/production\pro.X.production.obj
+check_fs@buf 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_pf_read 12CC 0 CODE 0 text13 dist/default/production\pro.X.production.obj
+__size_of_timer1_init 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+start_initialization 3AA2 0 CODE 0 cinit dist/default/production\pro.X.production.obj
+__end_of_follow_path 242E 0 CODE 0 text20 dist/default/production\pro.X.production.obj
+dir_rewind@fs 35 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+pf_mount@fsize 90 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+___lldiv@quotient 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_pf_readdir 3314 0 CODE 0 text16 dist/default/production\pro.X.production.obj
+pf_mount@buf 60 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__size_of_init_spi 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+clust2sect@clst 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+dir_read@a 7A 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+__end_of_pf_mount 178A 0 CODE 0 text29 dist/default/production\pro.X.production.obj
+load_header@ChunkID 90 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+dir_read@c 7D 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+create_name@path 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__initialization 3AA2 0 CODE 0 cinit dist/default/production\pro.X.production.obj
+__size_of_rcv_spi 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__CFG_FOSC$INTOSC_HS 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+dir_find@c 76 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+___llmod@dividend 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+clust2sect@fs 29 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\pro.X.production.obj
+___llmod@counter 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+___lmul@product 18 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__end_of_set_pwm1_duty 3CDA 0 CODE 0 text42 dist/default/production\pro.X.production.obj
+__size_of_set_pwm1_duty 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_wait_ready 3C10 0 CODE 0 text36 dist/default/production\pro.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_readdir@fs AF 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+play_wave_file@res DC 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+wav_putc@c 12 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+disk_readp@ofs 23 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+xmit_spi@c 11 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__end_of_wav_putc 3B9C 0 CODE 0 text9 dist/default/production\pro.X.production.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_wait_ready 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+__size_of_create_name 0 0 ABS 0 - dist/default/production\pro.X.production.obj
+pf_opendir@fs C5 0 BANK0 1 cstackBANK0 dist/default/production\pro.X.production.obj
+___lldiv@dividend 10 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+mem_cmp@d 19 0 COMRAM 1 cstackCOMRAM dist/default/production\pro.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+intcode 0 8 8 14 1
+smallconst 0 800 800 8 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 50 1
+cstackBANK0 1 60 60 9D 1
+bssBANK2 1 200 200 100 1
+bssBANK3 1 300 300 100 1
+bssBANK1 1 100 100 42 1
+text15 0 808 808 350C 1

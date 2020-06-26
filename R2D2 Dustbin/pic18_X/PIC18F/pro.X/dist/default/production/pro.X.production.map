@@ -1,0 +1,2507 @@
+Microchip MPLAB XC8 Compiler V1.33 ()
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
+  -h+dist/default/production\pro.X.production.sym \
+  --cmf=dist/default/production\pro.X.production.cmf -z -Q18F2550 \
+  -oC:\Users\Taimoor\AppData\Local\Temp\s4n0.6 \
+  -Mdist/default/production/pro.X.production.map -E1 -ver=XC8 \
+  -ASTACK=0400h-07ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init,end_init \
+  -pramtop=0800h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F000FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
+  C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj \
+  dist/default/production\pro.X.production.obj 
+
+Object code version is 3.11
+
+Machine type is 18F2550
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Taimoor\AppData\Local\Temp\s4n0.obj
+                end_init                             18       18        4        4       0
+                reset_vec                             0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/production\pro.X.production.obj
+                intcode                               8        8       10        4       0
+                smallconst                          800      800        8      400       0
+                text42                             3CC2     3CC2       18      404       0
+                intcode_body                       3734     3734       A8      404       0
+                text40                             38E2     38E2       82      404       0
+                text39                             3AF8     3AF8       56      404       0
+                text38                             3D02     3D02        A      404       0
+                text37                             3D0C     3D0C        8      404       0
+                text36                             3BDA     3BDA       36      404       0
+                text35                             3CF0     3CF0       12      404       0
+                text34                             3402     3402       E0      404       0
+                text33                             34E2     34E2       DA      404       0
+                text32                             3314     3314       EE      404       0
+                text31                             3C70     3C70       1E      404       0
+                text30                             2854     2854      1C6      404       0
+                text29                             12CC     12CC      4BE      404       0
+                text28                             3C44     3C44       2C      404       0
+                text27                             267C     267C      1D8      404       0
+                text26                             35BC     35BC       D0      404       0
+                text25                             178A     178A      3C0      404       0
+                text24                             242E     242E      24E      404       0
+                text23                             2F9A     2F9A      134      404       0
+                text22                             3964     3964       70      404       0
+                text21                             30CE     30CE      130      404       0
+                text20                             21C0     21C0      26E      404       0
+                text19                             2E60     2E60      13A      404       0
+                text18                             2D10     2D10      150      404       0
+                text17                             2A1A     2A1A      17E      404       0
+                text16                             31FE     31FE      116      404       0
+                text15                              808      808      59A      404       0
+                text14                             3A3C     3A3C       66      404       0
+                text13                              DA2      DA2      52A      404       0
+                text12                             39D4     39D4       68      404       0
+                text11                             1F02     1F02      2BE      404       0
+                text10                             2B98     2B98      178      404       0
+                text9                              3B4E     3B4E       4E      404       0
+                text8                              1B4A     1B4A      3B8      404       0
+                text7                              3CA8     3CA8       1A      404       0
+                text6                              3CDA     3CDA       16      404       0
+                text5                              3C8E     3C8E       1A      404       0
+                text4                              3C10     3C10       34      404       0
+                text3                              3B9C     3B9C       3E      404       0
+                text2                              3860     3860       82      404       0
+                text1                              37DC     37DC       84      404       0
+                text0                              368C     368C       A8      404       0
+                cstackCOMRAM                          1        1       47        1       1
+                cstackBANK0                          60       60       87       60       1
+                bssBANK3                            300      300      100      300       1
+                bssBANK2                            200      200      100      200       1
+                bssBANK1                            100      100       42      100       1
+                bssBANK0                             E7       E7       16       60       1
+                bssCOMRAM                            48       48        9        1       1
+                cinit                              3AA2     3AA2       56      404       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                             18       18        4         0
+                intcode                               8        8       10         0
+                reset_vec                             0        0        4         0
+                text42                             3CC2     3CC2       18         0
+                intcode_body                       3734     3734       A8         0
+                text40                             38E2     38E2       82         0
+                text39                             3AF8     3AF8       56         0
+                text38                             3D02     3D02        A         0
+                text37                             3D0C     3D0C        8         0
+                text36                             3BDA     3BDA       36         0
+                text35                             3CF0     3CF0       12         0
+                text34                             3402     3402       E0         0
+                text33                             34E2     34E2       DA         0
+                text32                             3314     3314       EE         0
+                text31                             3C70     3C70       1E         0
+                text30                             2854     2854      1C6         0
+                text29                             12CC     12CC      4BE         0
+                text28                             3C44     3C44       2C         0
+                text27                             267C     267C      1D8         0
+                text26                             35BC     35BC       D0         0
+                text25                             178A     178A      3C0         0
+                text24                             242E     242E      24E         0
+                text23                             2F9A     2F9A      134         0
+                text22                             3964     3964       70         0
+                text21                             30CE     30CE      130         0
+                text20                             21C0     21C0      26E         0
+                text19                             2E60     2E60      13A         0
+                text18                             2D10     2D10      150         0
+                text17                             2A1A     2A1A      17E         0
+                text16                             31FE     31FE      116         0
+                text15                              808      808      59A         0
+                text14                             3A3C     3A3C       66         0
+                text13                              DA2      DA2      52A         0
+                text12                             39D4     39D4       68         0
+                text11                             1F02     1F02      2BE         0
+                text10                             2B98     2B98      178         0
+                text9                              3B4E     3B4E       4E         0
+                text8                              1B4A     1B4A      3B8         0
+                text7                              3CA8     3CA8       1A         0
+                text6                              3CDA     3CDA       16         0
+                text5                              3C8E     3C8E       1A         0
+                text4                              3C10     3C10       34         0
+                text3                              3B9C     3B9C       3E         0
+                text2                              3860     3860       82         0
+                text1                              37DC     37DC       84         0
+                text0                              368C     368C       A8         0
+                cinit                              3AA2     3AA2       56         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                          800      800        8         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                cstackCOMRAM                          1        1       47         1
+                bssCOMRAM                            48       48        9         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          60       60       87         1
+                bssBANK0                             E7       E7       16         1
+
+        CLASS   BANK1          
+                bssBANK1                            100      100       42         1
+
+        CLASS   BANK2          
+                bssBANK2                            200      200      100         1
+
+        CLASS   BANK3          
+                bssBANK3                            300      300      100         1
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  000050  000051         1       1  COMRAM  
+                intcode                        000008  000014  00001C         4       0  CODE    
+                cstackBANK0                    000060  00009D  0000FD        60       1  BANK0   
+                bssBANK1                       000100  000042  000142       100       1  BANK1   
+                bssBANK2                       000200  000100  000300       200       1  BANK2   
+                bssBANK3                       000300  000100  000400       300       1  BANK3   
+                smallconst                     000800  000008  000808       400       0  SMALLCON
+                text15                         000808  00350C  003D14       404       0  CODE    
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000FD-0000FF                3
+        BANK1            000142-0001FF               BE
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BIGRAM           000051-00005F                F
+                         0000FD-0000FF                3
+                         000142-0001FF               BE
+                         000400-0007FF              400
+        CODE             000004-000007                4
+                         00001C-0007FF              7E4
+                         003D14-007FFF             42EC
+        COMRAM           000051-00005F                F
+        CONST            000004-000007                4
+                         00001C-0007FF              7E4
+                         003D14-007FFF             42EC
+        EEDATA           F00000-F000FF              100
+        MEDIUMCONST      003D14-007FFF             42EC
+        RAM              0000FD-0000FF                3
+                         000142-0001FF               BE
+                         000400-0007FF              100
+        SFR              000F60-000FFF               A0
+        SMALLCONST       003D14-007FFF              100
+        STACK            000400-0007FF              400
+
+                                  Symbol Table
+
+?___lldiv                   cstackCOMRAM 000010
+?___llmod                   cstackCOMRAM 000010
+?___lmul                    cstackCOMRAM 000010
+?_clust2sect                cstackCOMRAM 00001C
+?_get_fat                   cstackCOMRAM 00002D
+?_load_header               cstackBANK0  00008C
+?_mem_cmp                   cstackCOMRAM 000010
+?_strchr                    cstackCOMRAM 000010
+?_strlen                    cstackCOMRAM 000010
+?_strncmp                   cstackCOMRAM 000016
+?_strstr                    cstackCOMRAM 00001F
+_ADCON1                     (abs)        000FC1
+_BitsPerSample              bssBANK0     0000E7
+_Buff                       bssBANK2     000200
+_CCP1CON                    (abs)        000FBD
+_CCP2CON                    (abs)        000FBA
+_CCPR1L                     (abs)        000FBE
+_CCPR2L                     (abs)        000FBB
+_CardType                   bssCOMRAM    00004E
+_Dir1                       bssBANK0     0000EB
+_FatFs                      bssCOMRAM    000048
+_Fno                        bssBANK1     00012C
+_Fs                         bssBANK1     000100
+_INTCONbits                 (abs)        000FF2
+_LATCbits                   (abs)        000F8B
+_NumChannels                bssBANK0     0000E9
+_PIE1bits                   (abs)        000F9D
+_PIR1bits                   (abs)        000F9E
+_PR2                        (abs)        000FCB
+_SSPBUF                     (abs)        000FC9
+_SSPCON1                    (abs)        000FC6
+_SSPCON1bits                (abs)        000FC6
+_SSPSTAT                    (abs)        000FC7
+_SSPSTATbits                (abs)        000FC7
+_T1CONbits                  (abs)        000FCD
+_T2CON                      (abs)        000FCA
+_TMR1H                      (abs)        000FCF
+_TMR1H_preload              bssCOMRAM    00004F
+_TMR1L                      (abs)        000FCE
+_TMR1L_preload              bssCOMRAM    000050
+_TRISBbits                  (abs)        000F93
+_TRISC                      (abs)        000F94
+_TRISCbits                  (abs)        000F94
+_WAV_L_BUFF                 bssBANK3     000300
+__CFG_BOR$ON                (abs)        000000
+__CFG_BORV$3                (abs)        000000
+__CFG_CCP2MX$ON             (abs)        000000
+__CFG_CP0$OFF               (abs)        000000
+__CFG_CP1$OFF               (abs)        000000
+__CFG_CP2$OFF               (abs)        000000
+__CFG_CP3$OFF               (abs)        000000
+__CFG_CPB$OFF               (abs)        000000
+__CFG_CPD$OFF               (abs)        000000
+__CFG_CPUDIV$OSC1_PLL2      (abs)        000000
+__CFG_EBTR0$OFF             (abs)        000000
+__CFG_EBTR1$OFF             (abs)        000000
+__CFG_EBTR2$OFF             (abs)        000000
+__CFG_EBTR3$OFF             (abs)        000000
+__CFG_EBTRB$OFF             (abs)        000000
+__CFG_FCMEN$OFF             (abs)        000000
+__CFG_FOSC$INTOSC_HS        (abs)        000000
+__CFG_IESO$OFF              (abs)        000000
+__CFG_LPT1OSC$OFF           (abs)        000000
+__CFG_LVP$OFF               (abs)        000000
+__CFG_MCLRE$OFF             (abs)        000000
+__CFG_PBADEN$ON             (abs)        000000
+__CFG_PLLDIV$12             (abs)        000000
+__CFG_PWRT$OFF              (abs)        000000
+__CFG_STVREN$ON             (abs)        000000
+__CFG_USBDIV$2              (abs)        000000
+__CFG_VREGEN$OFF            (abs)        000000
+__CFG_WDT$OFF               (abs)        000000
+__CFG_WDTPS$32768           (abs)        000000
+__CFG_WRT0$OFF              (abs)        000000
+__CFG_WRT1$OFF              (abs)        000000
+__CFG_WRT2$OFF              (abs)        000000
+__CFG_WRT3$OFF              (abs)        000000
+__CFG_WRTB$OFF              (abs)        000000
+__CFG_WRTC$OFF              (abs)        000000
+__CFG_WRTD$OFF              (abs)        000000
+__CFG_XINST$OFF             (abs)        000000
+__HRAM                      (abs)        000000
+__Habs1                     abs1         000000
+__Hbank0                    bank0        000000
+__Hbank1                    bank1        000000
+__Hbank2                    bank2        000000
+__Hbank3                    bank3        000000
+__Hbank4                    bank4        000000
+__Hbank5                    bank5        000000
+__Hbank6                    bank6        000000
+__Hbank7                    bank7        000000
+__Hbigbss                   bigbss       000000
+__Hbigdata                  bigdata      000000
+__Hbigram                   bigram       000000
+__Hbss                      bss          000000
+__HbssBANK0                 bssBANK0     000000
+__HbssBANK1                 bssBANK1     000000
+__HbssBANK2                 bssBANK2     000000
+__HbssBANK3                 bssBANK3     000000
+__HbssCOMRAM                bssCOMRAM    000000
+__Hcinit                    cinit        000000
+__Hclrtext                  clrtext      000000
+__Hcomram                   comram       000000
+__Hconfig                   config       30000E
+__Hconst                    const        000000
+__HcstackBANK0              cstackBANK0  000000
+__HcstackCOMRAM             cstackCOMRAM 000000
+__Hdata                     data         000000
+__Heeprom_data              eeprom_data  000000
+__Hend_init                 end_init     00001C
+__Hfarbss                   farbss       000000
+__Hfardata                  fardata      000000
+__Hibigdata                 ibigdata     000000
+__Hidata                    idata        000000
+__Hidloc                    idloc        200008
+__Hifardata                 ifardata     000000
+__Hinit                     init         000018
+__Hintcode                  intcode      000018
+__Hintcode_body             intcode_body 000000
+__Hintcodelo                intcodelo    000018
+__Hintentry                 intentry     000000
+__Hintret                   intret       000000
+__Hintsave_regs             intsave_regs 000000
+__Hirdata                   irdata       000000
+__Hmediumconst              mediumconst  000000
+__HnvFARRAM                 nvFARRAM     000000
+__Hnvbit                    nvbit        000000
+__Hnvrram                   nvrram       000000
+__Hparam                    rparam       000000
+__Hpowerup                  powerup      000018
+__Hram                      ram          000000
+__Hramtop                   ramtop       000800
+__Hrbit                     rbit         000000
+__Hrbss                     rbss         000000
+__Hrdata                    rdata        000000
+__Hreset_vec                reset_vec    000004
+__Hrparam                   rparam       000000
+__Hsfr                      sfr          000000
+__Hsmallconst               smallconst   000808
+__Hspace_0                  (abs)        30000E
+__Hspace_1                  (abs)        000400
+__Hspace_2                  (abs)        000000
+__Hstack                    stack        000000
+__Hstruct                   struct       000000
+__Htemp                     temp         000000
+__Htext                     text         000000
+__Htext0                    text0        000000
+__Htext1                    text1        000000
+__Htext10                   text10       000000
+__Htext11                   text11       000000
+__Htext12                   text12       000000
+__Htext13                   text13       000000
+__Htext14                   text14       000000
+__Htext15                   text15       000000
+__Htext16                   text16       000000
+__Htext17                   text17       000000
+__Htext18                   text18       000000
+__Htext19                   text19       000000
+__Htext2                    text2        000000
+__Htext20                   text20       000000
+__Htext21                   text21       000000
+__Htext22                   text22       000000
+__Htext23                   text23       000000
+__Htext24                   text24       000000
+__Htext25                   text25       000000
+__Htext26                   text26       000000
+__Htext27                   text27       000000
+__Htext28                   text28       000000
+__Htext29                   text29       000000
+__Htext3                    text3        000000
+__Htext30                   text30       000000
+__Htext31                   text31       000000
+__Htext32                   text32       000000
+__Htext33                   text33       000000
+__Htext34                   text34       000000
+__Htext35                   text35       000000
+__Htext36                   text36       000000
+__Htext37                   text37       000000
+__Htext38                   text38       000000
+__Htext39                   text39       000000
+__Htext4                    text4        000000
+__Htext40                   text40       000000
+__Htext42                   text42       000000
+__Htext5                    text5        000000
+__Htext6                    text6        000000
+__Htext7                    text7        000000
+__Htext8                    text8        000000
+__Htext9                    text9        000000
+__LRAM                      (abs)        000001
+__Labs1                     abs1         000000
+__Lbank0                    bank0        000000
+__Lbank1                    bank1        000000
+__Lbank2                    bank2        000000
+__Lbank3                    bank3        000000
+__Lbank4                    bank4        000000
+__Lbank5                    bank5        000000
+__Lbank6                    bank6        000000
+__Lbank7                    bank7        000000
+__Lbigbss                   bigbss       000000
+__Lbigdata                  bigdata      000000
+__Lbigram                   bigram       000000
+__Lbss                      bss          000000
+__LbssBANK0                 bssBANK0     000000
+__LbssBANK1                 bssBANK1     000000
+__LbssBANK2                 bssBANK2     000000
+__LbssBANK3                 bssBANK3     000000
+__LbssCOMRAM                bssCOMRAM    000000
+__Lcinit                    cinit        000000
+__Lclrtext                  clrtext      000000
+__Lcomram                   comram       000000
+__Lconfig                   config       300000
+__Lconst                    const        000000
+__LcstackBANK0              cstackBANK0  000000
+__LcstackCOMRAM             cstackCOMRAM 000000
+__Ldata                     data         000000
+__Leeprom_data              eeprom_data  000000
+__Lend_init                 end_init     000018
+__Lfarbss                   farbss       000000
+__Lfardata                  fardata      000000
+__Libigdata                 ibigdata     000000
+__Lidata                    idata        000000
+__Lidloc                    idloc        200000
+__Lifardata                 ifardata     000000
+__Linit                     init         000018
+__Lintcode                  intcode      000008
+__Lintcode_body             intcode_body 000000
+__Lintcodelo                intcodelo    000018
+__Lintentry                 intentry     000000
+__Lintret                   intret       000000
+__Lintsave_regs             intsave_regs 000000
+__Lirdata                   irdata       000000
+__Lmediumconst              mediumconst  000000
+__LnvFARRAM                 nvFARRAM     000000
+__Lnvbit                    nvbit        000000
+__Lnvrram                   nvrram       000000
+__Lparam                    rparam       000000
+__Lpowerup                  powerup      000018
+__Lram                      ram          000000
+__Lramtop                   ramtop       000800
+__Lrbit                     rbit         000000
+__Lrbss                     rbss         000000
+__Lrdata                    rdata        000000
+__Lreset_vec                reset_vec    000000
+__Lrparam                   rparam       000000
+__Lsfr                      sfr          000000
+__Lsmallconst               smallconst   000800
+__Lspace_0                  (abs)        000000
+__Lspace_1                  (abs)        000000
+__Lspace_2                  (abs)        000000
+__Lstack                    stack        000000
+__Lstruct                   struct       000000
+__Ltemp                     temp         000000
+__Ltext                     text         000000
+__Ltext0                    text0        000000
+__Ltext1                    text1        000000
+__Ltext10                   text10       000000
+__Ltext11                   text11       000000
+__Ltext12                   text12       000000
+__Ltext13                   text13       000000
+__Ltext14                   text14       000000
+__Ltext15                   text15       000000
+__Ltext16                   text16       000000
+__Ltext17                   text17       000000
+__Ltext18                   text18       000000
+__Ltext19                   text19       000000
+__Ltext2                    text2        000000
+__Ltext20                   text20       000000
+__Ltext21                   text21       000000
+__Ltext22                   text22       000000
+__Ltext23                   text23       000000
+__Ltext24                   text24       000000
+__Ltext25                   text25       000000
+__Ltext26                   text26       000000
+__Ltext27                   text27       000000
+__Ltext28                   text28       000000
+__Ltext29                   text29       000000
+__Ltext3                    text3        000000
+__Ltext30                   text30       000000
+__Ltext31                   text31       000000
+__Ltext32                   text32       000000
+__Ltext33                   text33       000000
+__Ltext34                   text34       000000
+__Ltext35                   text35       000000
+__Ltext36                   text36       000000
+__Ltext37                   text37       000000
+__Ltext38                   text38       000000
+__Ltext39                   text39       000000
+__Ltext4                    text4        000000
+__Ltext40                   text40       000000
+__Ltext42                   text42       000000
+__Ltext5                    text5        000000
+__Ltext6                    text6        000000
+__Ltext7                    text7        000000
+__Ltext8                    text8        000000
+__Ltext9                    text9        000000
+__S0                        (abs)        30000E
+__S1                        (abs)        000400
+__S2                        (abs)        000000
+___inthi_sp                 stack        000000
+___intlo_sp                 stack        000000
+___lldiv                    text40       0038E2
+___lldiv@counter            cstackCOMRAM 00001C
+___lldiv@dividend           cstackCOMRAM 000010
+___lldiv@divisor            cstackCOMRAM 000014
+___lldiv@quotient           cstackCOMRAM 000018
+___llmod                    text14       003A3C
+___llmod@counter            cstackCOMRAM 000018
+___llmod@dividend           cstackCOMRAM 000010
+___llmod@divisor            cstackCOMRAM 000014
+___lmul                     text39       003AF8
+___lmul@multiplicand        cstackCOMRAM 000014
+___lmul@multiplier          cstackCOMRAM 000010
+___lmul@product             cstackCOMRAM 000018
+___sp                       stack        000000
+__accesstop                 (abs)        000060
+__activetblptr              (abs)        000002
+__end_of___lldiv            text40       003964
+__end_of___llmod            text14       003AA2
+__end_of___lmul             text39       003B4E
+__end_of__initialization    cinit        003AEE
+__end_of__stringdata        smallconst   000806
+__end_of_check_fs           text32       003402
+__end_of_clust2sect         text26       00368C
+__end_of_create_name        text27       002854
+__end_of_dir_find           text21       0031FE
+__end_of_dir_next           text24       00267C
+__end_of_dir_read           text18       002E60
+__end_of_dir_rewind         text23       0030CE
+__end_of_disk_initialize    text30       002A1A
+__end_of_disk_readp         text33       0035BC
+__end_of_follow_path        text20       00242E
+__end_of_get_fat            text25       001B4A
+__end_of_get_fileinfo       text17       002B98
+__end_of_init_spi           text31       003C8E
+__end_of_isr                intcode_body 0037DC
+__end_of_load_header        text11       0021C0
+__end_of_main               text0        003734
+__end_of_mem_cmp            text22       0039D4
+__end_of_mem_set            text28       003C70
+__end_of_pf_lseek           text15       000DA2
+__end_of_pf_mount           text29       00178A
+__end_of_pf_open            text10       002D10
+__end_of_pf_opendir         text19       002F9A
+__end_of_pf_read            text13       0012CC
+__end_of_pf_readdir         text16       003314
+__end_of_play_wave_file     text8        001F02
+__end_of_pwm_audio_init     text5        003CA8
+__end_of_pwm_init           text7        003CC2
+__end_of_rcv_spi            text38       003D0C
+__end_of_release_spi        text37       003D14
+__end_of_send_cmd           text34       0034E2
+__end_of_set_pwm1_duty      text42       003CDA
+__end_of_set_sampling_rate  text12       003A3C
+__end_of_strchr             text4        003C44
+__end_of_strlen             text3        003BDA
+__end_of_strncmp            text2        0038E2
+__end_of_strstr             text1        003860
+__end_of_timer1_init        text6        003CF0
+__end_of_wait_ready         text36       003C10
+__end_of_wav_putc           text9        003B9C
+__end_of_xmit_spi           text35       003D02
+__initialization            cinit        003AA2
+__mediumconst               mediumconst  000000
+__pbssBANK0                 bssBANK0     0000E7
+__pbssBANK1                 bssBANK1     000100
+__pbssBANK2                 bssBANK2     000200
+__pbssBANK3                 bssBANK3     000300
+__pbssCOMRAM                bssCOMRAM    000048
+__pcinit                    cinit        003AA2
+__pcstackBANK0              cstackBANK0  000060
+__pcstackCOMRAM             cstackCOMRAM 000001
+__pintcode                  intcode      000008
+__pintcode_body             intcode_body 003734
+__psmallconst               smallconst   000800
+__ptext0                    text0        00368C
+__ptext1                    text1        0037DC
+__ptext10                   text10       002B98
+__ptext11                   text11       001F02
+__ptext12                   text12       0039D4
+__ptext13                   text13       000DA2
+__ptext14                   text14       003A3C
+__ptext15                   text15       000808
+__ptext16                   text16       0031FE
+__ptext17                   text17       002A1A
+__ptext18                   text18       002D10
+__ptext19                   text19       002E60
+__ptext2                    text2        003860
+__ptext20                   text20       0021C0
+__ptext21                   text21       0030CE
+__ptext22                   text22       003964
+__ptext23                   text23       002F9A
+__ptext24                   text24       00242E
+__ptext25                   text25       00178A
+__ptext26                   text26       0035BC
+__ptext27                   text27       00267C
+__ptext28                   text28       003C44
+__ptext29                   text29       0012CC
+__ptext3                    text3        003B9C
+__ptext30                   text30       002854
+__ptext31                   text31       003C70
+__ptext32                   text32       003314
+__ptext33                   text33       0034E2
+__ptext34                   text34       003402
+__ptext35                   text35       003CF0
+__ptext36                   text36       003BDA
+__ptext37                   text37       003D0C
+__ptext38                   text38       003D02
+__ptext39                   text39       003AF8
+__ptext4                    text4        003C10
+__ptext40                   text40       0038E2
+__ptext42                   text42       003CC2
+__ptext5                    text5        003C8E
+__ptext6                    text6        003CDA
+__ptext7                    text7        003CA8
+__ptext8                    text8        001B4A
+__ptext9                    text9        003B4E
+__ramtop                    ramtop       000800
+__size_of___lldiv           (abs)        000000
+__size_of___llmod           (abs)        000000
+__size_of___lmul            (abs)        000000
+__size_of_check_fs          (abs)        000000
+__size_of_clust2sect        (abs)        000000
+__size_of_create_name       (abs)        000000
+__size_of_dir_find          (abs)        000000
+__size_of_dir_next          (abs)        000000
+__size_of_dir_read          (abs)        000000
+__size_of_dir_rewind        (abs)        000000
+__size_of_disk_initialize   (abs)        000000
+__size_of_disk_readp        (abs)        000000
+__size_of_follow_path       (abs)        000000
+__size_of_get_fat           (abs)        000000
+__size_of_get_fileinfo      (abs)        000000
+__size_of_init_spi          (abs)        000000
+__size_of_isr               (abs)        000000
+__size_of_load_header       (abs)        000000
+__size_of_main              (abs)        000000
+__size_of_mem_cmp           (abs)        000000
+__size_of_mem_set           (abs)        000000
+__size_of_pf_lseek          (abs)        000000
+__size_of_pf_mount          (abs)        000000
+__size_of_pf_open           (abs)        000000
+__size_of_pf_opendir        (abs)        000000
+__size_of_pf_read           (abs)        000000
+__size_of_pf_readdir        (abs)        000000
+__size_of_play_wave_file    (abs)        000000
+__size_of_pwm_audio_init    (abs)        000000
+__size_of_pwm_init          (abs)        000000
+__size_of_rcv_spi           (abs)        000000
+__size_of_release_spi       (abs)        000000
+__size_of_send_cmd          (abs)        000000
+__size_of_set_pwm1_duty     (abs)        000000
+__size_of_set_sampling_rate (abs)        000000
+__size_of_strchr            (abs)        000000
+__size_of_strlen            (abs)        000000
+__size_of_strncmp           (abs)        000000
+__size_of_strstr            (abs)        000000
+__size_of_timer1_init       (abs)        000000
+__size_of_wait_ready        (abs)        000000
+__size_of_wav_putc          (abs)        000000
+__size_of_xmit_spi          (abs)        000000
+__smallconst                smallconst   000800
+__stringdata                smallconst   000801
+_check_fs                   text32       003314
+_clust2sect                 text26       0035BC
+_create_name                text27       00267C
+_dir_find                   text21       0030CE
+_dir_next                   text24       00242E
+_dir_read                   text18       002D10
+_dir_rewind                 text23       002F9A
+_dir_rewind$154             cstackCOMRAM 000031
+_disk_initialize            text30       002854
+_disk_initialize$807        cstackCOMRAM 000022
+_disk_readp                 text33       0034E2
+_follow_path                text20       0021C0
+_get_fat                    text25       00178A
+_get_fat$110                cstackBANK0  000060
+_get_fileinfo               text17       002A1A
+_init_spi                   text31       003C70
+_isr                        intcode      000008
+_load_header                text11       001F02
+_main                       text0        00368C
+_mem_cmp                    text22       003964
+_mem_set                    text28       003C44
+_pWAVIN                     bssCOMRAM    00004A
+_pWAVOUT                    bssCOMRAM    00004C
+_pf_lseek                   text15       000808
+_pf_mount                   text29       0012CC
+_pf_open                    text10       002B98
+_pf_opendir                 text19       002E60
+_pf_read                    text13       000DA2
+_pf_read$348                cstackBANK0  00007A
+_pf_readdir                 text16       0031FE
+_play_wave_file             text8        001B4A
+_pwm_audio_init             text5        003C8E
+_pwm_init                   text7        003CA8
+_rb                         bssBANK0     0000FB
+_rcv_spi                    text38       003D02
+_release_spi                text37       003D0C
+_send_cmd                   text34       003402
+_set_pwm1_duty              text42       003CC2
+_set_sampling_rate          text12       0039D4
+_strchr                     text4        003C10
+_strlen                     text3        003B9C
+_strncmp                    text2        003860
+_strstr                     text1        0037DC
+_timer1_init                text6        003CDA
+_wait_ready                 text36       003BDA
+_wav_putc                   text9        003B4E
+_xmit_spi                   text35       003CF0
+check_fs@buf                cstackCOMRAM 00002D
+check_fs@sect               cstackCOMRAM 00002F
+clust2sect@clst             cstackCOMRAM 00001C
+clust2sect@fs               cstackCOMRAM 000029
+create_name@c               cstackCOMRAM 00002B
+create_name@d               cstackCOMRAM 000023
+create_name@dj              cstackCOMRAM 000018
+create_name@i               cstackCOMRAM 00002A
+create_name@ni              cstackCOMRAM 000026
+create_name@p               cstackCOMRAM 000024
+create_name@path            cstackCOMRAM 00001A
+create_name@sfn             cstackCOMRAM 000028
+create_name@si              cstackCOMRAM 000027
+dir_find@c                  cstackBANK0  000076
+dir_find@dir                cstackBANK0  000077
+dir_find@dj                 cstackCOMRAM 000044
+dir_find@res                cstackBANK0  000079
+dir_next@clst               cstackBANK0  000070
+dir_next@dj                 cstackCOMRAM 00003B
+dir_next@fs                 cstackBANK0  00006E
+dir_next@i                  cstackBANK0  000074
+dir_read@a                  cstackBANK0  00007A
+dir_read@c                  cstackBANK0  00007D
+dir_read@dir                cstackBANK0  00007B
+dir_read@dj                 cstackCOMRAM 000044
+dir_read@res                cstackBANK0  00007E
+dir_rewind@clst             cstackCOMRAM 000037
+dir_rewind@dj               cstackCOMRAM 00002B
+dir_rewind@fs               cstackCOMRAM 000035
+disk_initialize@cmd         cstackCOMRAM 000024
+disk_initialize@n           cstackCOMRAM 000028
+disk_initialize@ocr         cstackCOMRAM 00001E
+disk_initialize@tmr         cstackCOMRAM 000026
+disk_initialize@ty          cstackCOMRAM 000025
+disk_readp@bc               cstackCOMRAM 00002B
+disk_readp@buff             cstackCOMRAM 00001D
+disk_readp@cnt              cstackCOMRAM 000025
+disk_readp@lba              cstackCOMRAM 00001F
+disk_readp@ofs              cstackCOMRAM 000023
+disk_readp@rc               cstackCOMRAM 00002A
+disk_readp@res              cstackCOMRAM 000029
+end_of_initialization       cinit        003AEE
+follow_path@dir             cstackBANK0  00008A
+follow_path@dj              cstackBANK0  00007A
+follow_path@path            cstackBANK0  00007C
+follow_path@res             cstackBANK0  00008C
+get_fat@bc                  cstackBANK0  00006A
+get_fat@buf                 cstackBANK0  000062
+get_fat@clst                cstackCOMRAM 00002D
+get_fat@fs                  cstackBANK0  00006C
+get_fat@ofs                 cstackBANK0  000068
+get_fat@wc                  cstackBANK0  000066
+get_fileinfo@c              cstackCOMRAM 00001A
+get_fileinfo@dir            cstackCOMRAM 00001B
+get_fileinfo@dj             cstackCOMRAM 000010
+get_fileinfo@fno            cstackCOMRAM 000012
+get_fileinfo@i              cstackCOMRAM 00001D
+get_fileinfo@p              cstackCOMRAM 000018
+int_func                    intcode_body 003734
+intlevel0                   text         000000
+intlevel1                   text         000000
+intlevel2                   text         000000
+intlevel3                   text         000000
+load_header@ChunkID         cstackBANK0  000090
+load_header@SamplingRate    cstackBANK0  000094
+load_header@sz              cstackBANK0  000098
+mem_cmp@cnt                 cstackCOMRAM 000014
+mem_cmp@d                   cstackCOMRAM 000019
+mem_cmp@dst                 cstackCOMRAM 000010
+mem_cmp@r                   cstackCOMRAM 00001D
+mem_cmp@s                   cstackCOMRAM 00001B
+mem_cmp@src                 cstackCOMRAM 000012
+mem_set@cnt                 cstackCOMRAM 000014
+mem_set@d                   cstackCOMRAM 000016
+mem_set@dst                 cstackCOMRAM 000010
+mem_set@val                 cstackCOMRAM 000012
+pf_lseek@bcs                cstackBANK0  000082
+pf_lseek@clst               cstackBANK0  000086
+pf_lseek@fs                 cstackBANK0  00008A
+pf_lseek@ifptr              cstackBANK0  00007E
+pf_lseek@ofs                cstackCOMRAM 00003B
+pf_lseek@sect               cstackBANK0  00007A
+pf_mount@bsect              cstackBANK0  00008C
+pf_mount@buf                cstackBANK0  000060
+pf_mount@fmt                cstackBANK0  000094
+pf_mount@fs                 cstackCOMRAM 000033
+pf_mount@fsize              cstackBANK0  000090
+pf_mount@mclst              cstackBANK0  000088
+pf_mount@tsect              cstackBANK0  000084
+pf_open@dir                 cstackBANK0  0000A3
+pf_open@dj                  cstackBANK0  0000C6
+pf_open@fs                  cstackBANK0  0000C4
+pf_open@path                cstackBANK0  00008D
+pf_open@res                 cstackBANK0  0000C3
+pf_open@sp                  cstackBANK0  000097
+pf_opendir@dir              cstackBANK0  000099
+pf_opendir@dj               cstackBANK0  00008D
+pf_opendir@fs               cstackBANK0  0000C5
+pf_opendir@path             cstackBANK0  00008F
+pf_opendir@res              cstackBANK0  0000C7
+pf_opendir@sp               cstackBANK0  0000B9
+pf_read@br                  cstackCOMRAM 00003F
+pf_read@btr                 cstackCOMRAM 00003D
+pf_read@buff                cstackCOMRAM 00003B
+pf_read@clst                cstackBANK0  000084
+pf_read@dr                  cstackBANK0  000077
+pf_read@fs                  cstackBANK0  00008A
+pf_read@rbuff               cstackBANK0  000078
+pf_read@rcnt                cstackBANK0  000088
+pf_read@remain              cstackBANK0  000080
+pf_read@sect                cstackBANK0  00007C
+pf_readdir@dir              cstackBANK0  000083
+pf_readdir@dj               cstackBANK0  00007F
+pf_readdir@fno              cstackBANK0  000081
+pf_readdir@fs               cstackBANK0  0000AF
+pf_readdir@res              cstackBANK0  0000B1
+pf_readdir@sp               cstackBANK0  0000A3
+play_wave_file@amplitude    cstackBANK0  0000E1
+play_wave_file@fn           cstackBANK0  0000D6
+play_wave_file@i            cstackBANK0  0000E3
+play_wave_file@res          cstackBANK0  0000DC
+play_wave_file@sz           cstackBANK0  0000DD
+send_cmd@arg                cstackCOMRAM 000015
+send_cmd@cmd                cstackCOMRAM 00001C
+send_cmd@n                  cstackCOMRAM 00001B
+send_cmd@res                cstackCOMRAM 00001A
+set_pwm1_duty@duty1         cstackCOMRAM 000001
+set_sampling_rate@preload   cstackCOMRAM 000025
+set_sampling_rate@rate      cstackCOMRAM 00001D
+stackhi                     (abs)        0007FF
+stacklo                     (abs)        000400
+start                       init         000018
+start_initialization        cinit        003AA2
+strchr@chr                  cstackCOMRAM 000012
+strchr@ptr                  cstackCOMRAM 000010
+strlen@cp                   cstackCOMRAM 000014
+strlen@s                    cstackCOMRAM 000010
+strncmp@len                 cstackCOMRAM 00001A
+strncmp@s1                  cstackCOMRAM 000016
+strncmp@s2                  cstackCOMRAM 000018
+strstr@s1                   cstackCOMRAM 00001F
+strstr@s2                   cstackCOMRAM 000021
+wait_ready@res              cstackCOMRAM 000014
+wait_ready@timeout          cstackCOMRAM 000010
+wav_putc@c                  cstackCOMRAM 000012
+xmit_spi@c                  cstackCOMRAM 000011
+xmit_spi@temp               cstackCOMRAM 000010
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 101 in file "../../../PIC18F/main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   12
+ This function calls:
+		_pf_mount
+		_pf_opendir
+		_pf_readdir
+		_play_wave_file
+		_pwm_audio_init
+		_strstr
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _strstr *****************
+ Defined at:
+		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c"
+ Parameters:    Size  Location     Type
+  s1              2   30[COMRAM] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), NULL(0), 
+  s2              2   32[COMRAM] PTR const unsigned char 
+		 -> STR_2(5), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   30[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_strchr
+		_strlen
+		_strncmp
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _strncmp *****************
+ Defined at:
+		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c"
+ Parameters:    Size  Location     Type
+  s1              2   21[COMRAM] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), NULL(0), 
+  s2              2   23[COMRAM] PTR const unsigned char 
+		 -> STR_2(5), 
+  len             2   25[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   21[COMRAM] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_strstr
+ This function uses a non-reentrant model
+
+
+ *************** function _strlen *****************
+ Defined at:
+		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c"
+ Parameters:    Size  Location     Type
+  s               2   15[COMRAM] PTR const unsigned char 
+		 -> STR_2(5), 
+ Auto vars:     Size  Location     Type
+  cp              2   19[COMRAM] PTR const unsigned char 
+		 -> STR_2(5), 
+ Return value:  Size  Location     Type
+                  2   15[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_strstr
+ This function uses a non-reentrant model
+
+
+ *************** function _strchr *****************
+ Defined at:
+		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c"
+ Parameters:    Size  Location     Type
+  ptr             2   15[COMRAM] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), NULL(0), 
+  chr             2   17[COMRAM] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   15[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_strstr
+ This function uses a non-reentrant model
+
+
+ *************** function _pwm_audio_init *****************
+ Defined at:
+		line 103 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_pwm_init
+		_timer1_init
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _timer1_init *****************
+ Defined at:
+		line 57 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_pwm_audio_init
+ This function uses a non-reentrant model
+
+
+ *************** function _pwm_init *****************
+ Defined at:
+		line 27 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_pwm_audio_init
+ This function uses a non-reentrant model
+
+
+ *************** function _play_wave_file *****************
+ Defined at:
+		line 85 in file "../../../PIC18F/wave_file.c"
+ Parameters:    Size  Location     Type
+  fn              2  118[BANK0 ] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), 
+ Auto vars:     Size  Location     Type
+  i               4  131[BANK0 ] unsigned long 
+  sz              4  125[BANK0 ] unsigned long 
+  amplitude       2  129[BANK0 ] unsigned short 
+  res             1  124[BANK0 ] enum E4814
+ Return value:  Size  Location     Type
+                  2  118[BANK0 ] unsigned int 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       2       0       0       0       0       0       0       0
+      Locals:         0      11       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0
+      Totals:         0      17       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_load_header
+		_pf_open
+		_pf_read
+		_wav_putc
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _wav_putc *****************
+ Defined at:
+		line 135 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1   17[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_play_wave_file
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_open *****************
+ Defined at:
+		line 535 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  path            2   45[BANK0 ] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), 
+ Auto vars:     Size  Location     Type
+  dir            32   67[BANK0 ] unsigned char [32]
+  dj             16  102[BANK0 ] struct _Dir_
+  sp             12   55[BANK0 ] unsigned char [12]
+  fs              2  100[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+  res             1   99[BANK0 ] enum E48
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       2       0       0       0       0       0       0       0
+      Locals:         0      63       0       0       0       0       0       0       0
+      Temps:          0       8       0       0       0       0       0       0       0
+      Totals:         0      73       0       0       0       0       0       0       0
+Total ram usage:       73 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_follow_path
+ This function is called by:
+		_play_wave_file
+ This function uses a non-reentrant model
+
+
+ *************** function _load_header *****************
+ Defined at:
+		line 37 in file "../../../PIC18F/wave_file.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  sz              4   56[BANK0 ] unsigned long 
+  SamplingRate    4   52[BANK0 ] unsigned long 
+  ChunkID         4   48[BANK0 ] unsigned long 
+ Return value:  Size  Location     Type
+                  4   44[BANK0 ] unsigned long 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       4       0       0       0       0       0       0       0
+      Locals:         0      12       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:         4      16       0       0       0       0       0       0       0
+Total ram usage:       20 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_pf_lseek
+		_pf_read
+		_set_sampling_rate
+ This function is called by:
+		_play_wave_file
+ This function uses a non-reentrant model
+
+
+ *************** function _set_sampling_rate *****************
+ Defined at:
+		line 126 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+  rate            4   28[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  preload         4   36[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lldiv
+ This function is called by:
+		_load_header
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_read *****************
+ Defined at:
+		line 576 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  buff            2   58[COMRAM] PTR void 
+		 -> Buff(256), 
+  btr             2   60[COMRAM] unsigned short 
+  br              2   62[COMRAM] PTR unsigned short 
+		 -> rb(2), 
+ Auto vars:     Size  Location     Type
+  clst            4   36[BANK0 ] unsigned long 
+  remain          4   32[BANK0 ] unsigned long 
+  sect            4   28[BANK0 ] unsigned long 
+  fs              2   42[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+  rcnt            2   40[BANK0 ] unsigned short 
+  rbuff           2   24[BANK0 ] PTR unsigned char 
+		 -> Buff(256), 
+  dr              1   23[BANK0 ] enum E79
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         0      21       0       0       0       0       0       0       0
+      Temps:          0       9       0       0       0       0       0       0       0
+      Totals:         6      30       0       0       0       0       0       0       0
+Total ram usage:       36 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___llmod
+		_clust2sect
+		_disk_readp
+		_get_fat
+ This function is called by:
+		_load_header
+		_play_wave_file
+ This function uses a non-reentrant model
+
+
+ *************** function ___llmod *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c"
+ Parameters:    Size  Location     Type
+  dividend        4   15[COMRAM] unsigned long 
+  divisor         4   19[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  counter         1   23[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   15[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         8       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_pf_read
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_lseek *****************
+ Defined at:
+		line 704 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  ofs             4   58[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  clst            4   38[BANK0 ] unsigned long 
+  bcs             4   34[BANK0 ] unsigned long 
+  ifptr           4   30[BANK0 ] unsigned long 
+  sect            4   26[BANK0 ] unsigned long 
+  fs              2   42[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         0      18       0       0       0       0       0       0       0
+      Temps:          0      12       0       0       0       0       0       0       0
+      Totals:         4      30       0       0       0       0       0       0       0
+Total ram usage:       34 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___lldiv
+		_clust2sect
+		_get_fat
+ This function is called by:
+		_load_header
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_readdir *****************
+ Defined at:
+		line 805 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   31[BANK0 ] PTR struct _Dir_
+		 -> Dir1(16), 
+  fno             2   33[BANK0 ] PTR struct _FILINFO_
+		 -> Fno(22), 
+ Auto vars:     Size  Location     Type
+  dir            32   35[BANK0 ] unsigned char [32]
+  sp             12   67[BANK0 ] unsigned char [12]
+  fs              2   79[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+  res             1   81[BANK0 ] enum E48
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       4       0       0       0       0       0       0       0
+      Locals:         0      47       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0      51       0       0       0       0       0       0       0
+Total ram usage:       51 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_dir_next
+		_dir_read
+		_dir_rewind
+		_get_fileinfo
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _get_fileinfo *****************
+ Defined at:
+		line 329 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   15[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), 
+  fno             2   17[COMRAM] PTR struct _FILINFO_
+		 -> Fno(22), 
+ Auto vars:     Size  Location     Type
+  dir             2   26[COMRAM] PTR unsigned char 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+  p               2   23[COMRAM] PTR unsigned char 
+		 -> Fno.fname(13), Fno(22), 
+  i               1   28[COMRAM] unsigned char 
+  c               1   25[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_pf_readdir
+ This function uses a non-reentrant model
+
+
+ *************** function _dir_read *****************
+ Defined at:
+		line 240 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   67[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), 
+ Auto vars:     Size  Location     Type
+  dir             2   27[BANK0 ] PTR unsigned char 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+  res             1   30[BANK0 ] enum E48
+  c               1   29[BANK0 ] unsigned char 
+  a               1   26[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       5       0       0       0       0       0       0       0
+      Temps:          0       4       0       0       0       0       0       0       0
+      Totals:         2       9       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_dir_next
+		_disk_readp
+ This function is called by:
+		_pf_readdir
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_opendir *****************
+ Defined at:
+		line 761 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   45[BANK0 ] PTR struct _Dir_
+		 -> Dir1(16), 
+  path            2   47[BANK0 ] PTR const unsigned char 
+		 -> STR_1(1), 
+ Auto vars:     Size  Location     Type
+  dir            32   57[BANK0 ] unsigned char [32]
+  sp             12   89[BANK0 ] unsigned char [12]
+  fs              2  101[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+  res             1  103[BANK0 ] enum E48
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       4       0       0       0       0       0       0       0
+      Locals:         0      47       0       0       0       0       0       0       0
+      Temps:          0       8       0       0       0       0       0       0       0
+      Totals:         0      59       0       0       0       0       0       0       0
+Total ram usage:       59 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_dir_rewind
+		_follow_path
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _follow_path *****************
+ Defined at:
+		line 371 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   26[BANK0 ] PTR struct _Dir_
+		 -> Dir1(16), pf_open@dj(16), 
+  path            2   28[BANK0 ] PTR const unsigned char 
+		 -> Fno.fname(13), Fno(22), STR_1(1), 
+ Auto vars:     Size  Location     Type
+  dir             2   42[BANK0 ] PTR unsigned char 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+  res             1   44[BANK0 ] enum E48
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       4       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0
+      Temps:          0      12       0       0       0       0       0       0       0
+      Totals:         0      19       0       0       0       0       0       0       0
+Total ram usage:       19 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_create_name
+		_dir_find
+		_dir_rewind
+ This function is called by:
+		_pf_open
+		_pf_opendir
+ This function uses a non-reentrant model
+
+
+ *************** function _dir_find *****************
+ Defined at:
+		line 206 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   67[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), pf_open@dj(16), 
+ Auto vars:     Size  Location     Type
+  dir             2   23[BANK0 ] PTR unsigned char 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+  res             1   25[BANK0 ] enum E48
+  c               1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:         4       4       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_dir_next
+		_dir_rewind
+		_disk_readp
+		_mem_cmp
+ This function is called by:
+		_follow_path
+ This function uses a non-reentrant model
+
+
+ *************** function _mem_cmp *****************
+ Defined at:
+		line 51 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dst             2   15[COMRAM] PTR const void 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+  src             2   17[COMRAM] PTR const void 
+		 -> pf_readdir@sp(12), pf_opendir@sp(12), pf_open@sp(12), 
+  cnt             2   19[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  r               2   28[COMRAM] int 
+  s               2   26[COMRAM] PTR const unsigned char 
+		 -> pf_readdir@sp(12), pf_opendir@sp(12), pf_open@sp(12), 
+  d               2   24[COMRAM] PTR const unsigned char 
+		 -> pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+ Return value:  Size  Location     Type
+                  2   15[COMRAM] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0
+      Totals:        15       0       0       0       0       0       0       0       0
+Total ram usage:       15 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_dir_find
+ This function uses a non-reentrant model
+
+
+ *************** function _dir_rewind *****************
+ Defined at:
+		line 131 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   42[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), pf_open@dj(16), 
+ Auto vars:     Size  Location     Type
+  clst            4   54[COMRAM] unsigned long 
+  fs              2   52[COMRAM] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:        10       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0
+      Totals:        16       0       0       0       0       0       0       0       0
+Total ram usage:       16 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_clust2sect
+ This function is called by:
+		_dir_find
+		_follow_path
+		_pf_opendir
+		_pf_readdir
+ This function uses a non-reentrant model
+
+
+ *************** function _dir_next *****************
+ Defined at:
+		line 161 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   58[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), pf_open@dj(16), 
+ Auto vars:     Size  Location     Type
+  clst            4   16[BANK0 ] unsigned long 
+  i               2   20[BANK0 ] unsigned short 
+  fs              2   14[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       8       0       0       0       0       0       0       0
+      Temps:          7       0       0       0       0       0       0       0       0
+      Totals:         9       8       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_clust2sect
+		_get_fat
+ This function is called by:
+		_dir_find
+		_dir_read
+		_pf_readdir
+ This function uses a non-reentrant model
+
+
+ *************** function _get_fat *****************
+ Defined at:
+		line 65 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  clst            4   44[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  buf             4    2[BANK0 ] unsigned char [4]
+  fs              2   12[BANK0 ] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+  bc              2   10[BANK0 ] unsigned short 
+  ofs             2    8[BANK0 ] unsigned short 
+  wc              2    6[BANK0 ] unsigned short 
+ Return value:  Size  Location     Type
+                  4   44[COMRAM] unsigned long 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         0      14       0       0       0       0       0       0       0
+      Temps:         10       0       0       0       0       0       0       0       0
+      Totals:        14      14       0       0       0       0       0       0       0
+Total ram usage:       28 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_disk_readp
+ This function is called by:
+		_dir_next
+		_pf_read
+		_pf_lseek
+ This function uses a non-reentrant model
+
+
+ *************** function _clust2sect *****************
+ Defined at:
+		line 111 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  clst            4   27[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  fs              2   40[COMRAM] PTR struct _FATFS_
+		 -> Fs(44), NULL(0), 
+ Return value:  Size  Location     Type
+                  4   27[COMRAM] unsigned long 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          9       0       0       0       0       0       0       0       0
+      Totals:        15       0       0       0       0       0       0       0       0
+Total ram usage:       15 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lmul
+ This function is called by:
+		_dir_rewind
+		_dir_next
+		_pf_read
+		_pf_lseek
+ This function uses a non-reentrant model
+
+
+ *************** function _create_name *****************
+ Defined at:
+		line 280 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dj              2   23[COMRAM] PTR struct _Dir_
+		 -> Dir1(16), pf_open@dj(16), 
+  path            2   25[COMRAM] PTR PTR const unsigned c
+		 -> follow_path@path(2), 
+ Auto vars:     Size  Location     Type
+  sfn             2   39[COMRAM] PTR unsigned char 
+		 -> pf_readdir@sp(12), pf_opendir@sp(12), pf_open@sp(12), 
+  p               2   35[COMRAM] PTR const unsigned char 
+		 -> Fno(22), STR_1(1), 
+  c               1   42[COMRAM] unsigned char 
+  i               1   41[COMRAM] unsigned char 
+  si              1   38[COMRAM] unsigned char 
+  ni              1   37[COMRAM] unsigned char 
+  d               1   34[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         9       0       0       0       0       0       0       0       0
+      Temps:          7       0       0       0       0       0       0       0       0
+      Totals:        20       0       0       0       0       0       0       0       0
+Total ram usage:       20 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_mem_set
+ This function is called by:
+		_follow_path
+ This function uses a non-reentrant model
+
+
+ *************** function _mem_set *****************
+ Defined at:
+		line 44 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  dst             2   15[COMRAM] PTR void 
+		 -> pf_readdir@sp(12), pf_opendir@sp(12), pf_open@sp(12), 
+  val             2   17[COMRAM] int 
+  cnt             2   19[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  d               2   21[COMRAM] PTR unsigned char 
+		 -> pf_readdir@sp(12), pf_opendir@sp(12), pf_open@sp(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_create_name
+ This function uses a non-reentrant model
+
+
+ *************** function _pf_mount *****************
+ Defined at:
+		line 456 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  fs              2   50[COMRAM] PTR struct _FATFS_
+		 -> Fs(44), 
+ Auto vars:     Size  Location     Type
+  buf            36    0[BANK0 ] unsigned char [36]
+  fsize           4   48[BANK0 ] unsigned long 
+  bsect           4   44[BANK0 ] unsigned long 
+  mclst           4   40[BANK0 ] unsigned long 
+  tsect           4   36[BANK0 ] unsigned long 
+  fmt             1   52[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E48
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0      53       0       0       0       0       0       0       0
+      Temps:         16       0       0       0       0       0       0       0       0
+      Totals:        18      53       0       0       0       0       0       0       0
+Total ram usage:       71 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___lldiv
+		___lmul
+		_check_fs
+		_disk_initialize
+		_disk_readp
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _disk_initialize *****************
+ Defined at:
+		line 144 in file "../../../PIC18F/sd_mmc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  ocr             4   29[COMRAM] unsigned char [4]
+  tmr             2   37[COMRAM] unsigned short 
+  n               1   39[COMRAM] unsigned char 
+  ty              1   36[COMRAM] unsigned char 
+  cmd             1   35[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:        11       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_init_spi
+		_rcv_spi
+		_release_spi
+		_send_cmd
+ This function is called by:
+		_pf_mount
+ This function uses a non-reentrant model
+
+
+ *************** function _init_spi *****************
+ Defined at:
+		line 9 in file "../../../PIC18F/spi_pic18.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_disk_initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _check_fs *****************
+ Defined at:
+		line 422 in file "../../../PIC18F/pff.c"
+ Parameters:    Size  Location     Type
+  buf             2   44[COMRAM] PTR unsigned char 
+		 -> pf_mount@buf(36), 
+  sect            4   46[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_disk_readp
+ This function is called by:
+		_pf_mount
+ This function uses a non-reentrant model
+
+
+ *************** function _disk_readp *****************
+ Defined at:
+		line 194 in file "../../../PIC18F/sd_mmc.c"
+ Parameters:    Size  Location     Type
+  buff            2   28[COMRAM] PTR unsigned char 
+		 -> Buff(256), pf_readdir@dir(32), pf_opendir@dir(32), pf_open@dir(32), 
+		 -> pf_mount@buf(36), NULL(0), get_fat@buf(4), 
+  lba             4   30[COMRAM] unsigned long 
+  ofs             2   34[COMRAM] unsigned short 
+  cnt             2   36[COMRAM] unsigned short 
+ Auto vars:     Size  Location     Type
+  bc              2   42[COMRAM] unsigned short 
+  rc              1   41[COMRAM] unsigned char 
+  res             1   40[COMRAM] enum E4788
+ Return value:  Size  Location     Type
+                  1    wreg      enum E79
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:        10       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:        16       0       0       0       0       0       0       0       0
+Total ram usage:       16 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_rcv_spi
+		_release_spi
+		_send_cmd
+ This function is called by:
+		_get_fat
+		_dir_find
+		_dir_read
+		_check_fs
+		_pf_mount
+		_pf_read
+ This function uses a non-reentrant model
+
+
+ *************** function _send_cmd *****************
+ Defined at:
+		line 66 in file "../../../PIC18F/sd_mmc.c"
+ Parameters:    Size  Location     Type
+  cmd             1    wreg     unsigned char 
+  arg             4   20[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  cmd             1   27[COMRAM] unsigned char 
+  n               1   26[COMRAM] unsigned char 
+  res             1   25[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_rcv_spi
+		_wait_ready
+		_xmit_spi
+ This function is called by:
+		_disk_initialize
+		_disk_readp
+ This function uses a non-reentrant model
+
+
+ *************** function _xmit_spi *****************
+ Defined at:
+		line 30 in file "../../../PIC18F/spi_pic18.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1   16[COMRAM] unsigned char 
+  temp            1   15[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_send_cmd
+ This function uses a non-reentrant model
+
+
+ *************** function _wait_ready *****************
+ Defined at:
+		line 48 in file "../../../PIC18F/sd_mmc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  msg            10    0        unsigned char [10]
+  timeout         4   15[COMRAM] unsigned long 
+  res             1   19[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_rcv_spi
+ This function is called by:
+		_send_cmd
+ This function uses a non-reentrant model
+
+
+ *************** function _release_spi *****************
+ Defined at:
+		line 37 in file "../../../PIC18F/sd_mmc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_rcv_spi
+ This function is called by:
+		_disk_initialize
+		_disk_readp
+ This function uses a non-reentrant model
+
+
+ *************** function _rcv_spi *****************
+ Defined at:
+		line 41 in file "../../../PIC18F/spi_pic18.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_release_spi
+		_wait_ready
+		_send_cmd
+		_disk_initialize
+		_disk_readp
+ This function uses a non-reentrant model
+
+
+ *************** function ___lmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c"
+ Parameters:    Size  Location     Type
+  multiplier      4   15[COMRAM] unsigned long 
+  multiplicand    4   19[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  product         4   23[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  4   15[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         8       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_clust2sect
+		_pf_mount
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c"
+ Parameters:    Size  Location     Type
+  dividend        4   15[COMRAM] unsigned long 
+  divisor         4   19[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4   23[COMRAM] unsigned long 
+  counter         1   27[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   15[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         8       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:        13       0       0       0       0       0       0       0       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_pf_mount
+		_pf_lseek
+		_set_sampling_rate
+ This function uses a non-reentrant model
+
+
+ *************** function _isr *****************
+ Defined at:
+		line 76 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:         14       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_set_pwm1_duty
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _set_pwm1_duty *****************
+ Defined at:
+		line 43 in file "../../../PIC18F/pwm_audio.c"
+ Parameters:    Size  Location     Type
+  duty1           1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  duty1           1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_isr
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+../../../PIC18F/pwm_audio.c
+		_set_sampling_r		CODE           	39D4	0000	104
+		_isr           		CODE           	0008	0000	14292
+		_pwm_audio_init		CODE           	3C8E	0000	26
+		_timer1_init   		CODE           	3CDA	0000	22
+		_pwm_init      		CODE           	3CA8	0000	26
+		_set_pwm1_duty 		CODE           	3CC2	0000	24
+		_wav_putc      		CODE           	3B4E	0000	78
+
+../../../PIC18F/pwm_audio.c estimated size: 14572
+
+../../../PIC18F/sd_mmc.c
+		_send_cmd      		CODE           	3402	0000	224
+		_disk_initializ		CODE           	2854	0000	454
+		_release_spi   		CODE           	3D0C	0000	8
+		_disk_readp    		CODE           	34E2	0000	218
+		_wait_ready    		CODE           	3BDA	0000	54
+
+../../../PIC18F/sd_mmc.c estimated size: 958
+
+../../../PIC18F/spi_pic18.c
+		_init_spi      		CODE           	3C70	0000	30
+		_xmit_spi      		CODE           	3CF0	0000	18
+		_rcv_spi       		CODE           	3D02	0000	10
+
+../../../PIC18F/spi_pic18.c estimated size: 58
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c
+		_strstr        		CODE           	37DC	0000	132
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strstr.c estimated size: 132
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+		___llmod       		CODE           	3A3C	0000	102
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c estimated size: 102
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+		___lmul        		CODE           	3AF8	0000	86
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c estimated size: 86
+
+../../../PIC18F/pff.c
+		_get_fat       		CODE           	178A	0000	960
+		_create_name   		CODE           	267C	0000	472
+		_check_fs      		CODE           	3314	0000	238
+		_get_fileinfo  		CODE           	2A1A	0000	382
+		_dir_read      		CODE           	2D10	0000	336
+		_mem_set       		CODE           	3C44	0000	44
+		_clust2sect    		CODE           	35BC	0000	208
+		_dir_next      		CODE           	242E	0000	590
+		_dir_rewind    		CODE           	2F9A	0000	308
+		_pf_open       		CODE           	2B98	0000	376
+		_pf_opendir    		CODE           	2E60	0000	314
+		_dir_find      		CODE           	30CE	0000	304
+		_mem_cmp       		CODE           	3964	0000	112
+		_pf_lseek      		CODE           	0808	0000	1434
+		_pf_read       		CODE           	0DA2	0000	1322
+		_follow_path   		CODE           	21C0	0000	622
+		_pf_readdir    		CODE           	31FE	0000	278
+		_pf_mount      		CODE           	12CC	0000	1214
+
+../../../PIC18F/pff.c estimated size: 9514
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+		___lldiv       		CODE           	38E2	0000	130
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c estimated size: 130
+
+shared
+		__stringdata   		SMALLCONST     	0801	0000	5
+		__initializatio		CODE           	3AA2	0000	76
+
+shared estimated size: 81
+
+../../../PIC18F/main.c
+		_main          		CODE           	368C	0000	168
+
+../../../PIC18F/main.c estimated size: 168
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c
+		_strlen        		CODE           	3B9C	0000	62
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strlen.c estimated size: 62
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c
+		_strchr        		CODE           	3C10	0000	52
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strchr.c estimated size: 52
+
+../../../PIC18F/wave_file.c
+		_load_header   		CODE           	1F02	0000	702
+		_play_wave_file		CODE           	1B4A	0000	952
+
+../../../PIC18F/wave_file.c estimated size: 1654
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c
+		_strncmp       		CODE           	3860	0000	130
+
+C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncmp.c estimated size: 130
+

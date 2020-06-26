@@ -1,0 +1,30 @@
+# Writing all output to: C:\Users\WAQAS UR RAHMAN\Desktop\e-satrol\Labcenter Electronics\Proteus 7 Professional\BIN\rtlinks\up-down\updown.log
+set pad_wire_necking on
+bus diagonal
+fanout 10
+route 100
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+route 100 16
+clean 10
+filter 5
+recorner diagonal
+status_file
+

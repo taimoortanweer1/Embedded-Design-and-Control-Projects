@@ -1,0 +1,55 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'bo1946-FINAL.LYT'.
+CADCAM generated at 14:27:23 on 21 June, 2013.
+
+File List
+---------
+Top Copper              : bo1946-FINAL - CADCAM Top Copper.TXT
+Bottom Copper           : bo1946-FINAL - CADCAM Bottom Copper.TXT
+Top Silk Screen         : bo1946-FINAL - CADCAM Top Silk Screen.TXT
+Bottom Silk Screen      : bo1946-FINAL - CADCAM Bottom Silk Screen.TXT
+Top Solder Resist       : bo1946-FINAL - CADCAM Top Solder Resist.TXT
+Bottom Solder Resist    : bo1946-FINAL - CADCAM Bottom Solder Resist.TXT
+Top SMT Paste Mask      : bo1946-FINAL - CADCAM Top SMT Paste Mask.TXT
+Drill                   : bo1946-FINAL - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+D10	CIRCLE	D=0.25mm                                    DRAW
+D11	CIRCLE	D=1.27mm                                    FLASH
+D12	CIRCLE	D=0.3mm                                     DRAW
+D13	CIRCLE	D=0.0635mm                                  DRAW
+D14	SMT	W=0.75mm              H=0.27mm              FLASH
+D15	SMT	W=0.27mm              H=0.75mm              FLASH
+D16	SQUARE	S=2.03mm                                    FLASH
+D17	SQUARE	S=1.27mm                                    FLASH
+D18	CIRCLE	D=2.03mm                                    FLASH
+D19	CIRCLE	D=1.78mm                                    FLASH
+D70	CIRCLE	D=0.2mm                                     DRAW
+D71	CIRCLE	D=0.05mm                                    DRAW
+D20	CIRCLE	D=2mm                                       DRAW
+D21	SMT	W=1.26mm              H=0.78mm              FLASH
+D22	SMT	W=0.78mm              H=1.26mm              FLASH
+D23	SMT	W=2.54mm              H=2.54mm              FLASH
+D24	SMT	W=1.78mm              H=1.78mm              FLASH
+D25	CIRCLE	D=2.54mm                                    FLASH
+D26	CIRCLE	D=2.29mm                                    FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	0.51mm (0-15)
+T02	1.02mm (0-15)
+T03	0.76mm (0-15)
+
+
+[END OF FILE]

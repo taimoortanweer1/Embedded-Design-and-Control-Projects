@@ -1,0 +1,1085 @@
+[p GLOBOPT AUTOSTATIC LFSROK SPACEOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2550 ]
+[s S21 _FATFS_ 45 `uc 1 fs_type 1 0 `uc 1 csize 1 1 `uc 1 flag 1 2 `uc 1 csect 1 3 `us 1 n_rootdir 2 4 `*.Muc 1 buf 3 6 `ul 1 max_clust 4 9 `ul 1 fatbase 4 13 `ul 1 dirbase 4 17 `ul 1 database 4 21 `ul 1 fptr 4 25 `ul 1 fsize 4 29 `ul 1 org_clust 4 33 `ul 1 curr_clust 4 37 `ul 1 dsect 4 41 ]
+"28 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\main.c
+[s S38 _DIR_ 17 `us 1 index 2 0 `*.Muc 1 fn 3 2 `ul 1 sclust 4 5 `ul 1 clust 4 9 `ul 1 sect 4 13 ]
+"29
+[s S45 _FILINFO_ 22 `ul 1 fsize 4 0 `us 1 fdate 2 4 `us 1 ftime 2 6 `uc 1 fattrib 1 8 `[13]uc 1 fname 13 9 ]
+"32
+[e E1240 . `uc
+FR_OK 0
+FR_DISK_ERR 1
+FR_NOT_READY 2
+FR_NO_FILE 3
+FR_NO_PATH 4
+FR_NOT_OPENED 5
+FR_NOT_ENABLED 6
+FR_NO_FILESYSTEM 7
+]
+[s S81 _FATFS_ 45 `uc 1 fs_type 1 0 `uc 1 csize 1 1 `uc 1 flag 1 2 `uc 1 csect 1 3 `us 1 n_rootdir 2 4 `*.Muc 1 buf 3 6 `ul 1 max_clust 4 9 `ul 1 fatbase 4 13 `ul 1 dirbase 4 17 `ul 1 database 4 21 `ul 1 fptr 4 25 `ul 1 fsize 4 29 `ul 1 org_clust 4 33 `ul 1 curr_clust 4 37 `ul 1 dsect 4 41 ]
+"34 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[e E79 . `uc
+RES_OK 0
+RES_ERROR 1
+RES_NOTRDY 2
+RES_PARERR 3
+]
+"27 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\diskio.h
+[s S108 _DIR_ 17 `us 1 index 2 0 `*.Muc 1 fn 3 2 `ul 1 sclust 4 5 `ul 1 clust 4 9 `ul 1 sect 4 13 ]
+[e E48 . `uc
+FR_OK 0
+FR_DISK_ERR 1
+FR_NOT_READY 2
+FR_NO_FILE 3
+FR_NO_PATH 4
+FR_NOT_OPENED 5
+FR_NOT_ENABLED 6
+FR_NO_FILESYSTEM 7
+]
+[s S123 _FILINFO_ 22 `ul 1 fsize 4 0 `us 1 fdate 2 4 `us 1 ftime 2 6 `uc 1 fattrib 1 8 `[13]uc 1 fname 13 9 ]
+[s S244 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"416 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\include\p18f2550.h
+[s S252 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"735
+[s S265 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_A 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S274 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S280 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[s S285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S290 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S295 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[u S300 . 1 `S265 1 . 1 0 `S274 1 . 1 0 `S280 1 . 1 0 `S285 1 . 1 0 `S290 1 . 1 0 `S295 1 . 1 0 ]
+"789
+[s S308 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"791
+[s S319 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\wave_file.c
+[e E1154 . `uc
+FR_OK 0
+FR_DISK_ERR 1
+FR_NOT_READY 2
+FR_NO_FILE 3
+FR_NO_PATH 4
+FR_NOT_OPENED 5
+FR_NOT_ENABLED 6
+FR_NO_FILESYSTEM 7
+]
+"141 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.h
+[s S350 _FATFS_ 45 `uc 1 fs_type 1 0 `uc 1 csize 1 1 `uc 1 flag 1 2 `uc 1 csect 1 3 `us 1 n_rootdir 2 4 `*.Muc 1 buf 3 6 `ul 1 max_clust 4 9 `ul 1 fatbase 4 13 `ul 1 dirbase 4 17 `ul 1 database 4 21 `ul 1 fptr 4 25 `ul 1 fsize 4 29 `ul 1 org_clust 4 33 `ul 1 curr_clust 4 37 `ul 1 dsect 4 41 ]
+"654 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\include\p18f2550.h
+[s S392 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 T1RUN 1 0 :1:6 
+`uc 1 RD16 1 0 :1:7 
+]
+[s S401 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+[u S404 . 1 `S392 1 . 1 0 `S401 1 . 1 0 ]
+"821
+[s S410 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S419 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S428 . 1 `S410 1 . 1 0 `S419 1 . 1 0 ]
+"1046
+[s S432 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"446
+[s S441 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"77 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v F1126 `(v  1 t 0 ]
+"29 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[s S465 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"735 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\include\p18f2550.h
+[e E1128 . `uc
+RES_OK 0
+RES_ERROR 1
+RES_NOTRDY 2
+RES_PARERR 3
+]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+[v _cmd `uc  1 a 1 fsr0l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+[v _c `uc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+[v _dj `*.aS38  1 a 1 prodh ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _fs `*.aS21  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _fs `*.aS21  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _fs `*.aS21  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _fs `*.aS21  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dj `*.aS38  1 a 1 prodh ]
+"136 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _c `uc  1 a 1 fsr2l ]
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _cmd `uc  1 a 1 fsr0l ]
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _c `uc  1 a 1 fsr1l ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\aslmul.c
+[v ___aslmul `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"3 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _strchr `(*.Muc  1 e 1 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _strlen `(ui  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _strncmp `(i  1 e 2 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _strstr `(*.Muc  1 e 1 0 ]
+"35 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\main.c
+[v _main `(v  1 e 0 0 ]
+"57
+[v _delay `(v  1 e 0 0 ]
+"44 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _mem_set `(v  1 s 0 _mem_set ]
+"51
+[v _mem_cmp `(i  1 s 2 _mem_cmp ]
+"68
+[v _get_fat `(ul  1 s 4 _get_fat ]
+"114
+[v _clust2sect `(ul  1 s 4 _clust2sect ]
+"134
+[v _dir_rewind `(E48  1 s 1 _dir_rewind ]
+"164
+[v _dir_next `(E48  1 s 1 _dir_next ]
+"209
+[v _dir_find `(E48  1 s 1 _dir_find ]
+"243
+[v _dir_read `(E48  1 s 1 _dir_read ]
+"284
+[v _create_name `(E48  1 s 1 _create_name ]
+"333
+[v _get_fileinfo `(v  1 s 0 _get_fileinfo ]
+"375
+[v _follow_path `(E48  1 s 1 _follow_path ]
+"426
+[v _check_fs `(uc  1 s 1 _check_fs ]
+"459
+[v _pf_mount `(E1240  1 e 1 0 ]
+"538
+[v _pf_open `(E48  1 e 1 0 ]
+"581
+[v _pf_read `(E48  1 e 1 0 ]
+"707
+[v _pf_lseek `(E48  1 e 1 0 ]
+"765
+[v _pf_opendir `(E1240  1 e 1 0 ]
+"809
+[v _pf_readdir `(E1240  1 e 1 0 ]
+"28 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _pwm_init `(v  1 e 0 0 ]
+"44
+[v _set_pwm1_duty `(v  1 e 0 0 ]
+"58
+[v _timer1_init `(v  1 e 0 0 ]
+"77
+[v _isr `I(v  1 e 0 0 ]
+"104
+[v _pwm_audio_init `(v  1 e 0 0 ]
+"127
+[v _set_sampling_rate `(v  1 e 0 0 ]
+"136
+[v _wav_putc `(v  1 e 0 0 ]
+"38 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _release_spi `(v  1 s 0 _release_spi ]
+"49
+[v _wait_ready `(uc  1 s 1 _wait_ready ]
+"70
+[v _send_cmd `(uc  1 s 1 _send_cmd ]
+"145
+[v _disk_initialize `(uc  1 e 1 0 ]
+"200
+[v _disk_readp `(E79  1 e 1 0 ]
+"10 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _init_spi `(v  1 e 0 0 ]
+"31
+[v _xmit_spi `(v  1 e 0 0 ]
+"42
+[v _rcv_spi `(uc  1 e 1 0 ]
+"38 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\wave_file.c
+[v _load_header `(ul  1 s 4 _load_header ]
+"86
+[v _play_wave_file `(ui  1 e 2 0 ]
+"356 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\include\p18f2550.h
+[v _LATCbits `VNS465  1 e 1 @3979 ]
+"398
+[v _TRISBbits `VNS252  1 e 1 @3987 ]
+"408
+[v _TRISC `VNuc  1 e 1 @3988 ]
+"416
+[v _TRISCbits `VNS244  1 e 1 @3988 ]
+"436
+[v _PIE1bits `VNS441  1 e 1 @3997 ]
+"446
+[v _PIR1bits `VNS319  1 e 1 @3998 ]
+"654
+[v _CCP2CON `VNuc  1 e 1 @4026 ]
+"664
+[v _CCPR2L `VNuc  1 e 1 @4027 ]
+"666
+[v _CCP1CON `VNuc  1 e 1 @4029 ]
+"676
+[v _CCPR1L `VNuc  1 e 1 @4030 ]
+"689
+[v _ADCON1 `VNuc  1 e 1 @4033 ]
+"735
+[v _SSPCON1 `VNuc  1 e 1 @4038 ]
+"745
+[v _SSPCON1bits `VNS308  1 e 1 @4038 ]
+"746
+[v _SSPSTAT `VNuc  1 e 1 @4039 ]
+"789
+[v _SSPSTATbits `VNS300  1 e 1 @4039 ]
+"791
+[v _SSPBUF `VNuc  1 e 1 @4041 ]
+"792
+[v _T2CON `VNuc  1 e 1 @4042 ]
+"802
+[v _PR2 `VNuc  1 e 1 @4043 ]
+"820
+[v _T1CONbits `VNS404  1 e 1 @4045 ]
+"821
+[v _TMR1L `VNuc  1 e 1 @4046 ]
+"822
+[v _TMR1H `VNuc  1 e 1 @4047 ]
+"1046
+[v _INTCONbits `VNS428  1 e 1 @4082 ]
+"28 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\main.c
+[v _Fs `S21  1 e 44 @10 ]
+"29
+[v _Dir `S38  1 e 16 @80 ]
+"30
+[v _Fno `S45  1 e 22 @54 ]
+"34 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _FatFs `*.aS21  1 s 1 @9 ]
+"20 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _TMR1H_preload `uc  1 e 1 @8 ]
+[v _TMR1L_preload `uc  1 e 1 @7 ]
+"21
+[v _WAV_L_BUFF `[256]uc  1 e 256 @256 ]
+"23
+[v _pWAVOUT `Vui  1 e 2 @2 ]
+[v _pWAVIN `Vui  1 e 2 @4 ]
+"29 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _CardType `uc  1 e 1 @6 ]
+"29 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\wave_file.c
+[v _Buff `[256]uc  1 e 256 @512 ]
+"30
+[v _BitsPerSample `us  1 e 2 @78 ]
+[v _NumChannels `us  1 e 2 @76 ]
+"31
+[v _rb `us  1 e 2 @0 ]
+"7
+"148
+"88
+"35 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\main.c
+[v _main `(v  1 e 0 0 ]
+{
+"54
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strstr.c
+[v _strstr `(*.Muc  1 e 1 0 ]
+{
+[v _s1 `*.aDCuc  1 a 1 wreg ]
+[v _s2 `*.cDCuc  1 p 1 0 ]
+[v _s1 `*.aDCuc  1 a 1 prodl ]
+"12
+} 2
+"809 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _pf_readdir `(E1240  1 e 1 0 ]
+{
+[v _dj `*.aS38  1 a 1 wreg ]
+"810
+[v _res `E48  1 a 1 1 ]
+"811
+[v _sp `[12]uc  1 a 12 2 ]
+[v _dir `[32]uc  1 a 32 14 ]
+"809
+[v _dj `*.aS38  1 a 1 wreg ]
+[v _fno `*.aS45  1 p 1 0 ]
+"840
+} 46
+"765
+[v _pf_opendir `(E1240  1 e 1 0 ]
+{
+[v _dj `*.aS38  1 a 1 wreg ]
+"766
+[v _res `E48  1 a 1 1 ]
+"767
+[v _sp `[12]uc  1 a 12 2 ]
+[v _dir `[32]uc  1 a 32 14 ]
+"765
+[v _dj `*.aS38  1 a 1 wreg ]
+[v _path `*.cDCuc  1 p 1 0 ]
+[v _dj `*.aS38  1 a 1 fsr1l ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+[v _dj `*.aS38  1 a 1 0 ]
+"796
+} 46
+"86 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\wave_file.c
+[v _play_wave_file `(ui  1 e 2 0 ]
+{
+[v _fn `*.aDCuc  1 a 1 wreg ]
+"88
+[v _amplitude `us  1 a 2 1 ]
+"87
+[v _sz `ul  1 a 4 3 ]
+[v _i `ul  1 a 4 7 ]
+"86
+[v _fn `*.aDCuc  1 a 1 wreg ]
+"88
+[v _amplitude `us  1 a 2 1 ]
+[v _amplitude `us  1 a 2 1 ]
+[v _amplitude `us  1 a 2 1 ]
+[v _amplitude `us  1 a 2 1 ]
+"140
+} 11
+"459 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _pf_mount `(E1240  1 e 1 0 ]
+{
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 wreg ]
+"461
+[v _mclst `ul  1 a 4 2 ]
+[v _tsect `ul  1 a 4 6 ]
+[v _bsect `ul  1 a 4 10 ]
+[v _fsize `ul  1 a 4 14 ]
+"460
+[v _buf `[36]uc  1 a 36 18 ]
+"459
+[v _fs `*.aS21  1 a 1 wreg ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 fsr1l ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+"460
+[v _fmt `uc  1 a 1 0 ]
+"459
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+"526
+} 54
+"104 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _pwm_audio_init `(v  1 e 0 0 ]
+{
+"109
+} 0
+"57 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\main.c
+[v _delay `(v  1 e 0 0 ]
+{
+"58
+[v _i `l  1 a 4 0 ]
+"60
+} 4
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strlen.c
+[v _strlen `(ui  1 e 2 0 ]
+{
+[v _s `*.cDCuc  1 a 1 wreg ]
+[v _s `*.cDCuc  1 a 1 fsr1l ]
+"12
+} 0
+"538 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _pf_open `(E48  1 e 1 0 ]
+{
+[v _path `*.aDCuc  1 a 1 wreg ]
+"539
+[v _res `E48  1 a 1 1 ]
+"542
+[v _fs `*.aS21  1 a 1 2 ]
+"541
+[v _sp `[12]uc  1 a 12 3 ]
+"540
+[v _dj `S38  1 a 16 15 ]
+"541
+[v _dir `[32]uc  1 a 32 31 ]
+"538
+[v _path `*.aDCuc  1 a 1 wreg ]
+"542
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 fsr1l ]
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 2 ]
+"566
+} 63
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\aslmul.c
+[v ___aslmul `(ul  1 e 4 0 ]
+{
+[v _mp `*.bul  1 p 2 0 ]
+[v _multiplicand `ul  1 p 4 2 ]
+"7
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strchr.c
+[v _strchr `(*.Muc  1 e 1 0 ]
+{
+[v _ptr `*.aDCuc  1 a 1 wreg ]
+[v _chr `i  1 p 2 0 ]
+[v _ptr `*.aDCuc  1 a 1 fsr2l ]
+"11
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\strncmp.c
+[v _strncmp `(i  1 e 2 0 ]
+{
+[v _s1 `*.aDCuc  1 a 1 wreg ]
+[v _s2 `*.cDCuc  1 p 1 0 ]
+[v _len `ui  1 p 2 1 ]
+[v _s1 `*.aDCuc  1 a 1 fsr2l ]
+"14
+} 0
+"28 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _pwm_init `(v  1 e 0 0 ]
+{
+"41
+} 0
+"333 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _get_fileinfo `(v  1 s 0 _get_fileinfo ]
+{
+"334
+[v _dir `*.buc  1 a 2 0 ]
+"333
+[v _dj `*.aS38  1 a 1 wreg ]
+[v _fno `*.aS45  1 p 1 0 ]
+[v _dj `*.aS38  1 a 1 prodh ]
+"334
+[v _dir `*.buc  1 a 2 0 ]
+[v _i `uc  1 a 1 prodh ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _c `uc  1 a 1 prodl ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _dir `*.buc  1 a 2 fsr1 ]
+[v _dir `*.buc  1 a 2 0 ]
+[v _i `uc  1 a 1 prodl ]
+[v _c `uc  1 a 1 fsr1l ]
+"361
+} 2
+"38 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\wave_file.c
+[v _load_header `(ul  1 s 4 _load_header ]
+{
+"39
+[v _ChunkID `ul  1 a 4 0 ]
+[v _SamplingRate `ul  1 a 4 4 ]
+[v _sz `ul  1 a 4 8 ]
+"83
+} 12
+"145 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _disk_initialize `(uc  1 e 1 0 ]
+{
+"146
+[v _cmd `uc  1 a 1 0 ]
+"147
+[v _tmr `us  1 a 2 1 ]
+"146
+[v _ocr `[4]uc  1 a 4 3 ]
+[v _n `uc  1 a 1 fsr2l ]
+[v _n `uc  1 a 1 fsr1l ]
+"186
+} 7
+"243 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dir_read `(E48  1 s 1 _dir_read ]
+{
+[v _dj `*.aS38  1 a 1 wreg ]
+"244
+[v _res `E48  1 a 1 1 ]
+"245
+[v _dir `*.buc  1 a 2 2 ]
+"243
+[v _dj `*.aS38  1 a 1 wreg ]
+"266
+} 4
+"426
+[v _check_fs `(uc  1 s 1 _check_fs ]
+{
+[v _buf `*.buc  1 p 2 0 ]
+[v _sect `ul  1 p 4 2 ]
+"439
+} 0
+"58 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _timer1_init `(v  1 e 0 0 ]
+{
+"73
+} 0
+"136
+[v _wav_putc `(v  1 e 0 0 ]
+{
+[v _c `uc  1 a 1 wreg ]
+[v _c `uc  1 a 1 fsr2l ]
+"143
+} 0
+"581 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _pf_read `(E48  1 e 1 0 ]
+{
+"582
+[v _dr `E79  1 a 1 0 ]
+"587
+[v _fs `*.aS21  1 a 1 1 ]
+"585
+[v _rbuff `*.buc  1 a 2 2 ]
+"586
+[v _rcnt `us  1 a 2 4 ]
+"584
+[v _remain `ul  1 a 4 6 ]
+[v _sect `ul  1 a 4 10 ]
+"583
+[v _clst `ul  1 a 4 14 ]
+"581
+[v _buff `*.bv  1 p 2 0 ]
+[v _btr `us  1 p 2 2 ]
+[v _br `*.aus  1 p 1 4 ]
+"587
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 fsr1l ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 fsr1l ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+[v _fs `*.aS21  1 a 1 1 ]
+"624
+} 18
+"707
+[v _pf_lseek `(E48  1 e 1 0 ]
+{
+"710
+[v _fs `*.aS21  1 a 1 0 ]
+"709
+[v _sect `ul  1 a 4 1 ]
+[v _ifptr `ul  1 a 4 5 ]
+[v _bcs `ul  1 a 4 9 ]
+"708
+[v _clst `ul  1 a 4 13 ]
+"707
+[v _ofs `ul  1 p 4 0 ]
+"710
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 fsr1l ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+"751
+} 17
+"10 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _init_spi `(v  1 e 0 0 ]
+{
+"28
+} 0
+"375 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _follow_path `(E48  1 s 1 _follow_path ]
+{
+"376
+[v _res `E48  1 a 1 0 ]
+"375
+[v _dj `*.bS38  1 p 2 0 ]
+[v _path `*.sDCuc  1 p 2 2 ]
+"412
+} 1
+"127 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _set_sampling_rate `(v  1 e 0 0 ]
+{
+"128
+[v _preload `ul  1 a 4 0 ]
+"127
+[v _rate `ul  1 p 4 0 ]
+"133
+} 4
+"209 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dir_find `(E48  1 s 1 _dir_find ]
+{
+"210
+[v _res `E48  1 a 1 0 ]
+"211
+[v _dir `*.buc  1 a 2 1 ]
+"209
+[v _dj `*.bS38  1 p 2 0 ]
+"210
+[v _res `E48  1 a 1 0 ]
+[v _res `E48  1 a 1 0 ]
+[v _res `E48  1 a 1 0 ]
+"230
+} 3
+"284
+[v _create_name `(E48  1 s 1 _create_name ]
+{
+"285
+[v _d `uc  1 a 1 0 ]
+[v _ni `uc  1 a 1 1 ]
+"286
+[v _p `*.sDCuc  1 a 2 2 ]
+"284
+[v _dj `*.bS38  1 p 2 0 ]
+[v _path `*.b*.sDCuc  1 p 2 2 ]
+"319
+} 4
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+{
+[v _dividend `ul  1 p 4 0 ]
+[v _divisor `ul  1 p 4 4 ]
+"21
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+{
+"6
+[v _quotient `ul  1 a 4 0 ]
+"5
+[v _dividend `ul  1 p 4 0 ]
+[v _divisor `ul  1 p 4 4 ]
+"26
+} 4
+"134 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pff.c
+[v _dir_rewind `(E48  1 s 1 _dir_rewind ]
+{
+"135
+[v _clst `ul  1 a 4 4 ]
+"134
+[v _dj `*.bS38  1 p 2 0 ]
+"151
+} 8
+"164
+[v _dir_next `(E48  1 s 1 _dir_next ]
+{
+"167
+[v _fs `*.aS21  1 a 1 0 ]
+"166
+[v _i `us  1 a 2 1 ]
+"165
+[v _clst `ul  1 a 4 3 ]
+"164
+[v _dj `*.bS38  1 p 2 0 ]
+"167
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 0 ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 0 ]
+"196
+} 7
+"51
+[v _mem_cmp `(i  1 s 2 _mem_cmp ]
+{
+[v _dst `*.bDCv  1 p 2 0 ]
+[v _src `*.bDCv  1 p 2 2 ]
+[v _cnt `i  1 p 2 4 ]
+"56
+} 0
+"44
+[v _mem_set `(v  1 s 0 _mem_set ]
+{
+[v _dst `*.bv  1 p 2 0 ]
+[v _val `i  1 p 2 2 ]
+[v _cnt `i  1 p 2 4 ]
+"47
+} 0
+"114
+[v _clust2sect `(ul  1 s 4 _clust2sect ]
+{
+[v _clst `ul  1 p 4 0 ]
+"121
+} 0
+"68
+[v _get_fat `(ul  1 s 4 _get_fat ]
+{
+"71
+[v _fs `*.aS21  1 a 1 2 ]
+"69
+[v _ofs `us  1 a 2 3 ]
+[v _bc `us  1 a 2 5 ]
+"70
+[v _buf `[4]uc  1 a 4 7 ]
+"68
+[v _clst `ul  1 p 4 0 ]
+"71
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 2 ]
+[v _fs `*.aS21  1 a 1 fsr2l ]
+[v _fs `*.aS21  1 a 1 2 ]
+"101
+} 11
+"200 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _disk_readp `(E79  1 e 1 0 ]
+{
+"203
+[v _bc `us  1 a 2 0 ]
+"200
+[v _buff `*.buc  1 p 2 0 ]
+[v _lba `ul  1 p 4 2 ]
+[v _ofs `us  1 p 2 6 ]
+[v _cnt `us  1 p 2 8 ]
+"203
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+[v _bc `us  1 a 2 0 ]
+"239
+} 2
+"3 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+{
+"4
+[v _product `ul  1 a 4 0 ]
+"3
+[v _multiplier `ul  1 p 4 0 ]
+[v _multiplicand `ul  1 p 4 4 ]
+"13
+} 4
+"70 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\sd_mmc.c
+[v _send_cmd `(uc  1 s 1 _send_cmd ]
+{
+[v _cmd `uc  1 a 1 wreg ]
+[v _arg `ul  1 p 4 0 ]
+[v _cmd `uc  1 a 1 fsr0l ]
+"71
+[v _n `uc  1 a 1 fsr2l ]
+[v _res `uc  1 a 1 fsr1l ]
+[v _n `uc  1 a 1 fsr1l ]
+[v _res `uc  1 a 1 prodl ]
+"129
+} 0
+"38
+[v _release_spi `(v  1 s 0 _release_spi ]
+{
+"41
+} 0
+"49
+[v _wait_ready `(uc  1 s 1 _wait_ready ]
+{
+"51
+[v _timeout `ul  1 a 4 0 ]
+"59
+} 4
+"31 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\spi_pic18.c
+[v _xmit_spi `(v  1 e 0 0 ]
+{
+[v _c `uc  1 a 1 wreg ]
+[v _c `uc  1 a 1 fsr1l ]
+"39
+} 0
+"42
+[v _rcv_spi `(uc  1 e 1 0 ]
+{
+"51
+} 0
+"77 D:\ElabPh\SDMMC\PIC WAV Player\PIC18 SD WAV Audio Player\src_no_lcd\pwm_audio.c
+[v _isr `I(v  1 e 0 0 ]
+{
+"98
+} 0
+"44
+[v _set_pwm1_duty `(v  1 e 0 0 ]
+{
+[v _duty1 `uc  1 a 1 wreg ]
+[v _duty1 `uc  1 a 1 wreg ]
+"48
+} 1

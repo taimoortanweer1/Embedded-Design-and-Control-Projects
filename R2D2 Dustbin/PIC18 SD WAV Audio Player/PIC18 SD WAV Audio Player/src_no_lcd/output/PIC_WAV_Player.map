@@ -1,0 +1,824 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files\HI-TECH Software\PICC-18\PRO\9.64\dat\en_msgs.txt \
+  -cs -h+PIC_WAV_Player.sym -z -Q18F2550 -ol.obj -MPIC_WAV_Player.map -E1 \
+  -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0400h-04FFhx124 \
+  -AMEDIUMCONST=0400h-07FFFh -ARAM=00h-0FFhx4 -ABIGRAM=00h-03FFh \
+  -ACOMRAM=00h-05Fh -AABS1=00h-03FFh -ABANK0=00h-0FFh -ABANK1=0100h-01FFh \
+  -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh -ANVRAM=0300h-03FFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init,end_init \
+  -pramtop=0400h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -pparam3=BANK3 -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh \
+  -pconfig=CONFIG -AIDLOC=0200000h-0200007h -pidloc=IDLOC \
+  -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE startup.obj \
+  PIC_WAV_Player.obj 
+
+Object code version is 3.10
+
+Machine type is 18F2550
+
+Call graph: (short form)
+
+*_main size 0,0 offset 0
+     _pwm_audio_init size 0,0 offset 0
+         _pwm_init size 0,0 offset 0
+         _timer1_init size 0,0 offset 0
+     _delay size 0,4 offset 0
+     _pf_mount size 0,73 offset 0
+         _disk_initialize size 0,8 offset 73
+             _init_spi size 0,0 offset 81
+             _rcv_spi size 0,0 offset 173
+             _send_cmd size 4,1 offset 164
+                 _wait_ready size 0,4 offset 169
+                     _rcv_spi size 0,0 offset 173
+                 _xmit_spi size 0,0 offset 169
+                 _rcv_spi size 0,0 offset 173
+             _release_spi size 0,0 offset 164
+                 _rcv_spi size 0,0 offset 173
+         _check_fs size 6,0 offset 73
+             _disk_readp size 10,4 offset 150
+                 _send_cmd size 4,1 offset 164
+                 _rcv_spi size 0,0 offset 173
+                 _release_spi size 0,0 offset 164
+         _disk_readp size 10,4 offset 150
+         ___aslmul size 6,0 offset 73
+             ___lmul size 8,4 offset 133
+         ___lldiv size 8,4 offset 73
+     _pf_opendir size 1,54 offset 0
+         _follow_path size 4,13 offset 84
+             _dir_rewind size 2,12 offset 108
+                 _clust2sect size 4,4 offset 125
+                     ___lmul size 8,4 offset 133
+             _create_name size 4,9 offset 101
+                 _mem_set size 6,0 offset 114
+             _dir_find size 2,5 offset 101
+                 _dir_rewind size 2,12 offset 108
+                 _disk_readp size 10,4 offset 150
+                 _mem_cmp size 6,1 offset 108
+                 _dir_next size 2,15 offset 108
+                     _get_fat size 4,21 offset 125
+                         _disk_readp size 10,4 offset 150
+                     _clust2sect size 4,4 offset 125
+         _dir_rewind size 2,12 offset 108
+     _strstr size 1,2 offset 0
+         _strlen size 2,2 offset 3
+         _strncmp size 3,1 offset 3
+         _strchr size 2,0 offset 3
+*    _play_wave_file size 0,13 offset 0
+*        _pf_open size 0,71 offset 13
+*            _follow_path size 4,13 offset 84
+*        _load_header size 4,16 offset 13
+*            _pf_read size 5,26 offset 33
+                 ___llmod size 8,0 offset 64
+*                _get_fat size 4,21 offset 125
+                 _clust2sect size 4,4 offset 125
+*                _disk_readp size 10,4 offset 150
+             _set_sampling_rate size 4,4 offset 33
+                 ___lldiv size 8,4 offset 73
+             _pf_lseek size 4,29 offset 33
+                 ___lldiv size 8,4 offset 73
+                 _get_fat size 4,21 offset 125
+                 _clust2sect size 4,4 offset 125
+*        _pf_read size 5,26 offset 33
+         _wav_putc size 0,2 offset 13
+*    _pf_readdir size 1,46 offset 0
+         _dir_rewind size 2,12 offset 108
+         _dir_read size 0,8 offset 47
+             _disk_readp size 10,4 offset 150
+             _dir_next size 2,15 offset 108
+         _get_fileinfo size 1,6 offset 47
+*        _dir_next size 2,15 offset 108
+
+Estimated maximum call depth: 6
+
+*intlevel2 size 0,0 offset 173
+*    _isr size 0,2 offset 173
+*        _set_pwm1_duty size 0,1 offset 175
+
+Estimated maximum call depth: 2
+
+
+                Name          Link     Load   Length Selector Space Scale
+startup.obj     reset_vec        0        0        4       0     0
+                init            14       14       18       4     0
+                end_init        2C       2C       16       4     0
+                config      300000   300000        7  300000     0
+PIC_WAV_Player.obj
+                intcode          8        8        C       4     0
+                smallcons      400      400        8     200     0
+                text33        29A6     29A6       22     204     0
+                text32        2648     2648       5E     204     0
+                text31        18DA     18DA      184     204     0
+                text36        21F4     21F4       D2     204     0
+                text35         E28      E28      26E     204     0
+                text34        2440     2440       A2     204     0
+                text27        1754     1754      186     204     0
+                text26        1F22     1F22       FC     204     0
+                text25        2834     2834       46     204     0
+                text30        1D08     1D08      114     204     0
+                text29        256C     256C       76     204     0
+                text28        2700     2700       52     204     0
+                text37        279E     279E       4C     204     0
+                text44        29E4     29E4       1C     204     0
+                pa_nodes      15CC     15CC      188     204     0
+                text40        28F8     28F8       34     204     0
+                text39        2A5A     2A5A        6     204     0
+                text38        201E     201E       EC     204     0
+                text43        27EA     27EA       4A     204     0
+                text42        2A50     2A50        A     204     0
+                text41        2A3E     2A3E       12     204     0
+                text24        1442     1442      18A     204     0
+                text7         295C     295C       26     204     0
+                text6         2A2C     2A2C       12     204     0
+                text5          7AE      7AE      356     204     0
+                text10        287A     287A       46     204     0
+                text9         210A     210A       EA     204     0
+                text8         28C0     28C0       38     204     0
+                text1         26A6     26A6       5A     204     0
+                text0         2752     2752       4C     204     0
+                text4         1284     1284      1BE     204     0
+                text3         22C6     22C6       D0     204     0
+                text2         2396     2396       AA     204     0
+                text11        2982     2982       24     204     0
+                text20        292C     292C       30     204     0
+                text19        2A1A     2A1A       12     204     0
+                text18        24E2     24E2       8A     204     0
+                text23        29C8     29C8       1C     204     0
+                text22         408      408      3A6     204     0
+                text21         B04      B04      324     204     0
+                text14        1BC4     1BC4      144     204     0
+                text13        2A00     2A00       1A     204     0
+                text12        25E2     25E2       66     204     0
+                text17        1E1C     1E1C      106     204     0
+                text16        1A5E     1A5E      166     204     0
+                text15        1096     1096      1EE     204     0
+
+COMMON          param3         300      300       B0     300     1
+
+TOTAL           Name          Link     Load   Length  Space
+        CLASS   CODE           
+                intcode          8        8        C     0
+                reset_vec        0        0        4     0
+                init            14       14       18     0
+                end_init        2C       2C       16     0
+                text33        29A6     29A6       22     0
+                text32        2648     2648       5E     0
+                text31        18DA     18DA      184     0
+                text36        21F4     21F4       D2     0
+                text35         E28      E28      26E     0
+                text34        2440     2440       A2     0
+                text27        1754     1754      186     0
+                text26        1F22     1F22       FC     0
+                text25        2834     2834       46     0
+                text30        1D08     1D08      114     0
+                text29        256C     256C       76     0
+                text28        2700     2700       52     0
+                text37        279E     279E       4C     0
+                text44        29E4     29E4       1C     0
+                pa_nodes      15CC     15CC      188     0
+                text40        28F8     28F8       34     0
+                text39        2A5A     2A5A        6     0
+                text38        201E     201E       EC     0
+                text43        27EA     27EA       4A     0
+                text42        2A50     2A50        A     0
+                text41        2A3E     2A3E       12     0
+                text24        1442     1442      18A     0
+                text7         295C     295C       26     0
+                text6         2A2C     2A2C       12     0
+                text5          7AE      7AE      356     0
+                text10        287A     287A       46     0
+                text9         210A     210A       EA     0
+                text8         28C0     28C0       38     0
+                text1         26A6     26A6       5A     0
+                text0         2752     2752       4C     0
+                text4         1284     1284      1BE     0
+                text3         22C6     22C6       D0     0
+                text2         2396     2396       AA     0
+                text11        2982     2982       24     0
+                text20        292C     292C       30     0
+                text19        2A1A     2A1A       12     0
+                text18        24E2     24E2       8A     0
+                text23        29C8     29C8       1C     0
+                text22         408      408      3A6     0
+                text21         B04      B04      324     0
+                text14        1BC4     1BC4      144     0
+                text13        2A00     2A00       1A     0
+                text12        25E2     25E2       66     0
+                text17        1E1C     1E1C      106     0
+                text16        1A5E     1A5E      166     0
+                text15        1096     1096      1EE     0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallcons      400      400        8     0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   RAM            
+
+        CLASS   BIGRAM         
+
+        CLASS   COMRAM         
+
+        CLASS   ABS1           
+                abs_s1           0        0       60     1
+                abs_s1         100      100      200     1
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+                param3         300      300       B0     1
+
+        CLASS   NVRAM          
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config      300000   300000        7     0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name           Load    Length   Top     Selector    Space Class
+
+                reset_vec       000000  000004  000004         0       0  CODE    
+                intcode         000008  00003A  000042         4       0  CODE    
+                param3          000300  0000B0  0003B0       300       1  BANK3   
+                smallconst      000400  000008  000408       200       0  SMALLCON
+                idata           000408  002658  002A60       204       0  CODE    
+                config          300000  000007  300007    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        BANK0            000060-0000FF
+        BANK3            0003B0-0003FF
+        BIGRAM           000060-0000FF
+                         0003B0-0003FF
+        CODE             000004-000007
+                         000042-0003FF
+                         002A60-007FFF
+        CONFIG           300007-30000D
+        CONST            000004-000007
+                         000042-0003FF
+                         002A60-007FFF
+        EEDATA           F00000-F000FF
+        IDLOC            200000-200007
+        MEDIUMCONST      002A60-007FFF
+        NVRAM            0003B0-0003FF
+        RAM              000060-0000FF
+                         0003B0-0003FF
+        SMALLCONST       002A60-007FFF
+
+                                  Symbol Table
+
+??___aslmul                param3       00034F
+??___lldiv                 param3       000351
+??___llmod                 param3       000348
+??___lmul                  param3       00038D
+??_check_fs                param3       00034F
+??_clust2sect              param3       000381
+??_create_name             param3       000369
+??_delay                   param3       000300
+??_dir_find                param3       000367
+??_dir_next                param3       00036E
+??_dir_read                param3       00032F
+??_dir_rewind              param3       00036E
+??_disk_initialize         param3       000349
+??_disk_readp              param3       0003A0
+??_follow_path             param3       000358
+??_get_fat                 param3       000381
+??_get_fileinfo            param3       000330
+??_init_spi                param3       000351
+??_isr                     param3       0003AD
+??_load_header             param3       000311
+??_main                    param3       000300
+??_mem_cmp                 param3       000372
+??_mem_set                 param3       000378
+??_pf_lseek                param3       000325
+??_pf_mount                param3       000300
+??_pf_open                 param3       00030D
+??_pf_opendir              param3       000301
+??_pf_read                 param3       000326
+??_pf_readdir              param3       000301
+??_play_wave_file          param3       000300
+??_pwm_audio_init          param3       000300
+??_pwm_init                param3       000300
+??_rcv_spi                 param3       0003AD
+??_release_spi             param3       0003A4
+??_send_cmd                param3       0003A8
+??_set_pwm1_duty           param3       0003AF
+??_set_sampling_rate       param3       000325
+??_strchr                  param3       000305
+??_strlen                  param3       000305
+??_strncmp                 param3       000306
+??_strstr                  param3       000301
+??_timer1_init             param3       000300
+??_wait_ready              param3       0003A9
+??_wav_putc                param3       00030D
+??_xmit_spi                param3       0003A9
+?___aslmul                 param3       000349
+?___lldiv                  param3       000349
+?___llmod                  param3       000340
+?___lmul                   param3       000385
+?_check_fs                 param3       000349
+?_clust2sect               param3       00037D
+?_create_name              param3       000365
+?_delay                    param3       000300
+?_dir_find                 param3       000365
+?_dir_next                 param3       00036C
+?_dir_read                 param3       00032F
+?_dir_rewind               param3       00036C
+?_disk_initialize          param3       000349
+?_disk_readp               param3       000396
+?_follow_path              param3       000354
+?_get_fat                  param3       00037D
+?_get_fileinfo             param3       00032F
+?_init_spi                 param3       000351
+?_isr                      param3       0003AD
+?_load_header              param3       00030D
+?_main                     param3       000300
+?_mem_cmp                  param3       00036C
+?_mem_set                  param3       000372
+?_pf_lseek                 param3       000321
+?_pf_mount                 param3       000300
+?_pf_open                  param3       00030D
+?_pf_opendir               param3       000300
+?_pf_read                  param3       000321
+?_pf_readdir               param3       000300
+?_play_wave_file           param3       000300
+?_pwm_audio_init           param3       000300
+?_pwm_init                 param3       000300
+?_rcv_spi                  param3       0003AD
+?_release_spi              param3       0003A4
+?_send_cmd                 param3       0003A4
+?_set_pwm1_duty            param3       0003AF
+?_set_sampling_rate        param3       000321
+?_strchr                   param3       000303
+?_strlen                   param3       000303
+?_strncmp                  param3       000303
+?_strstr                   param3       000300
+?_timer1_init              param3       000300
+?_wait_ready               param3       0003A9
+?_wav_putc                 param3       00030D
+?_xmit_spi                 param3       0003A9
+_ADCON1                    (abs)        000FC1
+_BitsPerSample             (abs)        00004E
+_Buff                      (abs)        000200
+_CCP1CON                   (abs)        000FBD
+_CCP2CON                   (abs)        000FBA
+_CCPR1L                    (abs)        000FBE
+_CCPR2L                    (abs)        000FBB
+_CardType                  (abs)        000006
+_Dir                       (abs)        000050
+_FatFs                     (abs)        000009
+_Fno                       (abs)        000036
+_Fs                        (abs)        00000A
+_INTCONbits                (abs)        000FF2
+_LATCbits                  (abs)        000F8B
+_NumChannels               (abs)        00004C
+_PIE1bits                  (abs)        000F9D
+_PIR1bits                  (abs)        000F9E
+_PR2                       (abs)        000FCB
+_SSPBUF                    (abs)        000FC9
+_SSPCON1                   (abs)        000FC6
+_SSPCON1bits               (abs)        000FC6
+_SSPSTAT                   (abs)        000FC7
+_SSPSTATbits               (abs)        000FC7
+_T1CONbits                 (abs)        000FCD
+_T2CON                     (abs)        000FCA
+_TMR1H                     (abs)        000FCF
+_TMR1H_preload             (abs)        000008
+_TMR1L                     (abs)        000FCE
+_TMR1L_preload             (abs)        000007
+_TRISBbits                 (abs)        000F93
+_TRISC                     (abs)        000F94
+_TRISCbits                 (abs)        000F94
+_WAV_L_BUFF                (abs)        000100
+__Bnvbit                   nvbit        00004C
+__Brbit                    rbit         00004C
+__HRAM                     (abs)        000000
+__Habsbss0                 (abs)        000060
+__Habsbss1                 (abs)        000300
+__Hbigbss                  bigbss       0003B0
+__Hbigdata                 bigdata      0003B0
+__Hbss                     bss          000060
+__Hclrtext                 clrtext      000408
+__Hconfig                  config       300007
+__Hconst                   const        000408
+__Hdata                    data         000408
+__Heeprom_data             eeprom_data  F00000
+__Hend_init                end_init     000042
+__Hfarbss                  farbss       000000
+__Hfardata                 fardata      000000
+__Hibigdata                ibigdata     000408
+__Hidata                   idata        000408
+__Hidloc                   idloc        200000
+__Hifardata                ifardata     000408
+__Hinit                    init         00002C
+__Hintcode                 intcode      000014
+__Hintcodelo               intcodelo    000014
+__Hintentry                intentry     000408
+__Hintret                  intret       000408
+__Hintsave_regs            intsave_regs 0003B0
+__Hirdata                  irdata       000408
+__Hmediumconst             mediumconst  000408
+__Hnvbit                   nvbit        000260
+__Hnvram                   nvram        000408
+__Hnvrram                  nvrram       00004C
+__Hpa_nodes                pa_nodes     000408
+__Hparam                   param3       0003B0
+__Hparam0                  param0       000408
+__Hparam1                  param1       000408
+__Hparam2                  param2       000408
+__Hparam3                  param3       0003B0
+__Hpowerup                 powerup      000014
+__Hramtop                  ramtop       000400
+__Hrbit                    rbit         000260
+__Hrbss                    rbss         00004C
+__Hrdata                   rdata        00004C
+__Hreset_vec               reset_vec    000004
+__Hrparam                  rparam       000408
+__Hsmallconst              smallconst   000408
+__Hstruct                  struct       00004C
+__Htemp                    temp         00004C
+__Htext                    text         000408
+__Htext0                   text0        000408
+__Htext1                   text1        000408
+__Htext10                  text10       000408
+__Htext11                  text11       000408
+__Htext12                  text12       000408
+__Htext13                  text13       000408
+__Htext14                  text14       000408
+__Htext15                  text15       000408
+__Htext16                  text16       000408
+__Htext17                  text17       000408
+__Htext18                  text18       000408
+__Htext19                  text19       000408
+__Htext2                   text2        000408
+__Htext20                  text20       000408
+__Htext21                  text21       000408
+__Htext22                  text22       000408
+__Htext23                  text23       000408
+__Htext24                  text24       000408
+__Htext25                  text25       000408
+__Htext26                  text26       000408
+__Htext27                  text27       000408
+__Htext28                  text28       000408
+__Htext29                  text29       000408
+__Htext3                   text3        000408
+__Htext30                  text30       000408
+__Htext31                  text31       000408
+__Htext32                  text32       000408
+__Htext33                  text33       000408
+__Htext34                  text34       000408
+__Htext35                  text35       000408
+__Htext36                  text36       000408
+__Htext37                  text37       000408
+__Htext38                  text38       000408
+__Htext39                  text39       000408
+__Htext4                   text4        000408
+__Htext40                  text40       000408
+__Htext41                  text41       000408
+__Htext42                  text42       000408
+__Htext43                  text43       000408
+__Htext44                  text44       000408
+__Htext5                   text5        000408
+__Htext6                   text6        000408
+__Htext7                   text7        000408
+__Htext8                   text8        000408
+__Htext9                   text9        000408
+__LRAM                     (abs)        000001
+__Labsbss0                 (abs)        000000
+__Labsbss1                 (abs)        000100
+__Lbigbss                  bigbss       0003B0
+__Lbigdata                 bigdata      0003B0
+__Lbss                     bss          000060
+__Lclrtext                 clrtext      000408
+__Lconfig                  config       300000
+__Lconst                   const        000408
+__Ldata                    (abs)        000000
+__Leeprom_data             eeprom_data  F00000
+__Lend_init                end_init     00002C
+__Lfarbss                  farbss       000000
+__Lfardata                 fardata      000000
+__Libigdata                ibigdata     000408
+__Lidata                   idata        000408
+__Lidloc                   idloc        200000
+__Lifardata                ifardata     000408
+__Linit                    init         000014
+__Lintcode                 intcode      000008
+__Lintcodelo               intcodelo    000014
+__Lintentry                intentry     000408
+__Lintret                  intret       000408
+__Lintsave_regs            intsave_regs 0003B0
+__Lirdata                  irdata       000408
+__Lmediumconst             mediumconst  000408
+__Lnvbit                   nvbit        000260
+__Lnvram                   nvram        000408
+__Lnvrram                  nvrram       00004C
+__Lpa_nodes                pa_nodes     000408
+__Lparam                   param3       000300
+__Lparam0                  param0       000408
+__Lparam1                  param1       000408
+__Lparam2                  param2       000408
+__Lparam3                  param3       000300
+__Lpowerup                 powerup      000014
+__Lramtop                  ramtop       000400
+__Lrbit                    rbit         000260
+__Lrbss                    rbss         00004C
+__Lrdata                   rdata        00004C
+__Lreset_vec               reset_vec    000000
+__Lrparam                  rparam       000408
+__Lsmallconst              smallconst   000400
+__Lstruct                  struct       00004C
+__Ltemp                    temp         00004C
+__Ltext                    text         000408
+__Ltext0                   text0        000408
+__Ltext1                   text1        000408
+__Ltext10                  text10       000408
+__Ltext11                  text11       000408
+__Ltext12                  text12       000408
+__Ltext13                  text13       000408
+__Ltext14                  text14       000408
+__Ltext15                  text15       000408
+__Ltext16                  text16       000408
+__Ltext17                  text17       000408
+__Ltext18                  text18       000408
+__Ltext19                  text19       000408
+__Ltext2                   text2        000408
+__Ltext20                  text20       000408
+__Ltext21                  text21       000408
+__Ltext22                  text22       000408
+__Ltext23                  text23       000408
+__Ltext24                  text24       000408
+__Ltext25                  text25       000408
+__Ltext26                  text26       000408
+__Ltext27                  text27       000408
+__Ltext28                  text28       000408
+__Ltext29                  text29       000408
+__Ltext3                   text3        000408
+__Ltext30                  text30       000408
+__Ltext31                  text31       000408
+__Ltext32                  text32       000408
+__Ltext33                  text33       000408
+__Ltext34                  text34       000408
+__Ltext35                  text35       000408
+__Ltext36                  text36       000408
+__Ltext37                  text37       000408
+__Ltext38                  text38       000408
+__Ltext39                  text39       000408
+__Ltext4                   text4        000408
+__Ltext40                  text40       000408
+__Ltext41                  text41       000408
+__Ltext42                  text42       000408
+__Ltext43                  text43       000408
+__Ltext44                  text44       000408
+__Ltext5                   text5        000408
+__Ltext6                   text6        000408
+__Ltext7                   text7        000408
+__Ltext8                   text8        000408
+__Ltext9                   text9        000408
+__S0                       (abs)        F00000
+__S1                       (abs)        0003B0
+___aslmul                  text10       00287A
+___aslmul@mp               param3       000349
+___aslmul@multiplicand     param3       00034B
+___lldiv                   text29       00256C
+___lldiv@dividend          param3       000349
+___lldiv@divisor           param3       00034D
+___lldiv@quotient          param3       000351
+___llmod                   text28       002700
+___llmod@dividend          param3       000340
+___llmod@divisor           param3       000344
+___lmul                    text37       00279E
+___lmul@multiplicand       param3       000389
+___lmul@multiplier         param3       000385
+___lmul@product            param3       00038D
+__accesstop                (abs)        000060
+__activetblptr             (abs)        000002
+__config_BOR$ON            (abs)        000001
+__config_BORV$2            (abs)        000001
+__config_CPUDIV$OSC1_PLL2  (abs)        000001
+__config_DEBUG$ON          (abs)        000001
+__config_FOSC$HSPLL_HS     (abs)        000001
+__config_LVP$OFF           (abs)        000001
+__config_PLLDIV$5          (abs)        000001
+__config_PWRT$ON           (abs)        000001
+__config_WDT$OFF           (abs)        000001
+__end_of___aslmul          text10       0028C0
+__end_of___lldiv           text29       0025E2
+__end_of___llmod           text28       002752
+__end_of___lmul            text37       0027EA
+__end_of_check_fs          text18       00256C
+__end_of_clust2sect        text34       0024E2
+__end_of_create_name       text27       0018DA
+__end_of_delay             text7        002982
+__end_of_dir_find          text26       00201E
+__end_of_dir_next          text31       001A5E
+__end_of_dir_read          text17       001F22
+__end_of_dir_rewind        text30       001E1C
+__end_of_disk_initialize   text16       001BC4
+__end_of_disk_readp        text36       0022C6
+__end_of_follow_path       text24       0015CC
+__end_of_get_fat           text35       001096
+__end_of_get_fileinfo      text14       001D08
+__end_of_init_spi          text23       0029E4
+__end_of_isr               text43       002834
+__end_of_load_header       text15       001284
+__end_of_main              text0        00279E
+__end_of_mem_cmp           text32       0026A6
+__end_of_mem_set           text33       0029C8
+__end_of_pf_lseek          text22       0007AE
+__end_of_pf_mount          text5        000B04
+__end_of_pf_open           text9        0021F4
+__end_of_pf_opendir        text3        002396
+__end_of_pf_read           text21       000E28
+__end_of_pf_readdir        text2        002440
+__end_of_play_wave_file    text4        001442
+__end_of_pwm_audio_init    text6        002A3E
+__end_of_pwm_init          text13       002A1A
+__end_of_rcv_spi           text42       002A5A
+__end_of_release_spi       text39       002A60
+__end_of_send_cmd          text38       00210A
+__end_of_set_pwm1_duty     text44       002A00
+__end_of_set_sampling_rate text25       00287A
+__end_of_strchr            text11       0029A6
+__end_of_strlen            text8        0028F8
+__end_of_strncmp           text12       002648
+__end_of_strstr            text1        002700
+__end_of_timer1_init       text19       002A2C
+__end_of_wait_ready        text40       00292C
+__end_of_wav_putc          text20       00295C
+__end_of_xmit_spi          text41       002A50
+__mediumconst              mediumconst  000408
+__ramtop                   ramtop       000400
+__smallconst               smallconst   000400
+_check_fs                  text18       0024E2
+_clust2sect                text34       002440
+_create_name               text27       001754
+_delay                     text7        00295C
+_dir_find                  text26       001F22
+_dir_next                  text31       0018DA
+_dir_read                  text17       001E1C
+_dir_rewind                text30       001D08
+_dir_rewind$1149           param3       00036E
+_disk_initialize           text16       001A5E
+_disk_readp                text36       0021F4
+_exit                      init         000014
+_follow_path               text24       001442
+_get_fat                   text35       000E28
+_get_fat$1147              param3       000381
+_get_fileinfo              text14       001BC4
+_init_spi                  text23       0029C8
+_isr                       text43       0027EA
+_load_header               text15       001096
+_main                      text0        002752
+_mem_cmp                   text32       002648
+_mem_set                   text33       0029A6
+_pWAVIN                    (abs)        000004
+_pWAVOUT                   (abs)        000002
+_pf_lseek                  text22       000408
+_pf_mount                  text5        0007AE
+_pf_open                   text9        00210A
+_pf_opendir                text3        0022C6
+_pf_read                   text21       000B04
+_pf_readdir                text2        002396
+_play_wave_file            text4        001284
+_pwm_audio_init            text6        002A2C
+_pwm_init                  text13       002A00
+_rb                        (abs)        000000
+_rcv_spi                   text42       002A50
+_release_spi               text39       002A5A
+_send_cmd                  text38       00201E
+_set_pwm1_duty             text44       0029E4
+_set_sampling_rate         text25       002834
+_strchr                    text11       002982
+_strlen                    text8        0028C0
+_strncmp                   text12       0025E2
+_strstr                    text1        0026A6
+_strstr$1150               param3       000301
+_timer1_init               text19       002A1A
+_wait_ready                text40       0028F8
+_wav_putc                  text20       00292C
+_xmit_spi                  text41       002A3E
+check_fs@buf               param3       000349
+check_fs@sect              param3       00034B
+clust2sect@clst            param3       00037D
+create_name@d              param3       000369
+create_name@dj             param3       000365
+create_name@ni             param3       00036A
+create_name@p              param3       00036B
+create_name@path           param3       000367
+delay@i                    param3       000300
+dir_find@dir               param3       000368
+dir_find@dj                param3       000365
+dir_find@res               param3       000367
+dir_next@clst              param3       000371
+dir_next@dj                param3       00036C
+dir_next@fs                param3       00036E
+dir_next@i                 param3       00036F
+dir_read@dir               param3       000331
+dir_read@dj                param3       00032F
+dir_read@res               param3       000330
+dir_rewind@clst            param3       000372
+dir_rewind@dj              param3       00036C
+disk_initialize@cmd        param3       000349
+disk_initialize@ocr        param3       00034C
+disk_initialize@tmr        param3       00034A
+disk_readp@bc              param3       0003A0
+disk_readp@buff            param3       000396
+disk_readp@cnt             param3       00039E
+disk_readp@lba             param3       000398
+disk_readp@ofs             param3       00039C
+follow_path@dj             param3       000354
+follow_path@path           param3       000356
+follow_path@res            param3       000358
+get_fat@bc                 param3       000386
+get_fat@buf                param3       000388
+get_fat@clst               param3       00037D
+get_fat@fs                 param3       000383
+get_fat@ofs                param3       000384
+get_fileinfo@dir           param3       000330
+get_fileinfo@fno           param3       00032F
+int_func                   intcode      000008
+intlevel0                  text         002A60
+intlevel1                  text         002A60
+intlevel2                  text         002A60
+intlevel3                  text         002A60
+load_header@ChunkID        param3       000311
+load_header@SamplingRate   param3       000315
+load_header@sz             param3       000319
+mem_cmp@cnt                param3       000370
+mem_cmp@dst                param3       00036C
+mem_cmp@src                param3       00036E
+mem_set@cnt                param3       000376
+mem_set@dst                param3       000372
+mem_set@val                param3       000374
+pf_lseek@bcs               param3       00032E
+pf_lseek@clst              param3       000332
+pf_lseek@fs                param3       000325
+pf_lseek@ifptr             param3       00032A
+pf_lseek@ofs               param3       000321
+pf_lseek@sect              param3       000326
+pf_mount@bsect             param3       00030A
+pf_mount@buf               param3       000312
+pf_mount@fmt               param3       000300
+pf_mount@fs                param3       000301
+pf_mount@fsize             param3       00030E
+pf_mount@mclst             param3       000302
+pf_mount@tsect             param3       000306
+pf_open@dir                param3       00032C
+pf_open@dj                 param3       00031C
+pf_open@fs                 param3       00030F
+pf_open@path               param3       00030D
+pf_open@res                param3       00030E
+pf_open@sp                 param3       000310
+pf_opendir@dir             param3       00030F
+pf_opendir@dj              param3       000301
+pf_opendir@path            param3       000300
+pf_opendir@res             param3       000302
+pf_opendir@sp              param3       000303
+pf_read@br                 param3       000325
+pf_read@btr                param3       000323
+pf_read@buff               param3       000321
+pf_read@clst               param3       000334
+pf_read@dr                 param3       000326
+pf_read@fs                 param3       000327
+pf_read@rbuff              param3       000328
+pf_read@rcnt               param3       00032A
+pf_read@remain             param3       00032C
+pf_read@sect               param3       000330
+pf_readdir@dir             param3       00030F
+pf_readdir@dj              param3       000301
+pf_readdir@fno             param3       000300
+pf_readdir@res             param3       000302
+pf_readdir@sp              param3       000303
+play_wave_file@amplitude   param3       000301
+play_wave_file@fn          param3       000300
+play_wave_file@i           param3       000307
+play_wave_file@sz          param3       000303
+send_cmd@arg               param3       0003A4
+set_pwm1_duty@duty1        param3       0003AF
+set_sampling_rate@preload  param3       000325
+set_sampling_rate@rate     param3       000321
+start                      init         000014
+strchr@chr                 param3       000303
+strncmp@len                param3       000304
+strncmp@s2                 param3       000303
+strstr@s2                  param3       000300
+wait_ready@timeout         param3       0003A9
